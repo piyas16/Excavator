@@ -20,6 +20,10 @@ h3 {
       font-size: clamp(1rem, 2.5vw, 1.4em);
 }
 
+p {
+      text-align: justify;
+}
+
 /*****************************Slider css*************************************/
 #sliderSection {
       position: relative;
@@ -458,6 +462,106 @@ h3 {
             .company {
                   padding-top: .8rem;
                   margin-left: 1rem;
+            }
+      }
+
+}
+
+/***************************Oferta CSS***************************************/
+#ofertaPost {
+      padding: 2rem .5rem;
+      clear: both;
+
+      .box-shaddow {
+            box-shadow: 1px 1px 1px 1px rgb(207, 196, 196);
+
+            .ofertaContentwrapper {
+                  padding: 1.5rem 0rem;
+
+                  h2 {
+                        color: rgb(0, 0, 0);
+                        font-weight: 600;
+                        text-align: center;
+                        padding-bottom: .8rem;
+                        margin-bottom: 1.5rem;
+                        border-bottom: 2px solid rgb(255, 0, 0);
+                  }
+
+            }
+      }
+}
+
+/***************************gallary CSS***************************************/
+#gallaryPost {
+      margin: 3rem 0rem;
+
+      .background {
+            background-color: #0404040a;
+            ;
+      }
+
+      h1 {
+            padding: 2rem 0rem;
+            text-align: center;
+      }
+
+      .col-12 {
+            padding-bottom: 3rem;
+      }
+
+      .gallaryImgWrapper {
+
+
+            img {
+                  width: 100%;
+                  max-width: 48rem;
+                  display: block;
+                  margin: auto;
+                  max-height: 22rem;
+            }
+      }
+
+      .gallaryContentWrapper {
+            h2 {
+                  padding: 1rem 0rem;
+                  text-align: center;
+                  border-bottom: 3px solid #000;
+            }
+
+            p {}
+      }
+
+      .pagination {
+            ul {
+                  display: flex;
+                  justify-content: center;
+                  margin-left: -2.6rem;
+
+                  li {
+                        list-style: none;
+                        width: 3rem;
+                        border: 2px solid #3933338f;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        margin: 0rem .2rem;
+                        background: #f4da04;
+                        height: 2.5rem;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+
+                        a {
+                              display: block;
+
+                              img {
+                                    width: .7rem;
+                              }
+                        }
+                  }
             }
       }
 

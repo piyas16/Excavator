@@ -21,6 +21,10 @@ h3 {
   font-size: clamp(1rem, 2.5vw, 1.4em);
 }
 
+p {
+  text-align: justify;
+}
+
 /*****************************Slider css*************************************/
 #sliderSection {
   position: relative;
@@ -420,6 +424,98 @@ h3 {
 .art-footer .copyRight .company {
   padding-top: .8rem;
   margin-left: 1rem;
+}
+
+/***************************Oferta CSS***************************************/
+#ofertaPost {
+  padding: 2rem .5rem;
+  clear: both;
+}
+
+#ofertaPost .box-shaddow {
+  -webkit-box-shadow: 1px 1px 1px 1px #cfc4c4;
+          box-shadow: 1px 1px 1px 1px #cfc4c4;
+}
+
+#ofertaPost .box-shaddow .ofertaContentwrapper {
+  padding: 1.5rem 0rem;
+}
+
+#ofertaPost .box-shaddow .ofertaContentwrapper h2 {
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: .8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid red;
+}
+
+/***************************gallary CSS***************************************/
+#gallaryPost {
+  margin: 3rem 0rem;
+}
+
+#gallaryPost .background {
+  background-color: #0404040a;
+}
+
+#gallaryPost h1 {
+  padding: 2rem 0rem;
+  text-align: center;
+}
+
+#gallaryPost .col-12 {
+  padding-bottom: 3rem;
+}
+
+#gallaryPost .gallaryImgWrapper img {
+  width: 100%;
+  max-width: 48rem;
+  display: block;
+  margin: auto;
+  max-height: 22rem;
+}
+
+#gallaryPost .gallaryContentWrapper h2 {
+  padding: 1rem 0rem;
+  text-align: center;
+  border-bottom: 3px solid #000;
+}
+
+#gallaryPost .pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -2.6rem;
+}
+
+#gallaryPost .pagination ul li {
+  list-style: none;
+  width: 3rem;
+  border: 2px solid #3933338f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0rem .2rem;
+  background: #f4da04;
+  height: 2.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#gallaryPost .pagination ul li a {
+  display: block;
+}
+
+#gallaryPost .pagination ul li a img {
+  width: .7rem;
 }
 
 /***************************RESPONSIVE CSS***************************************/

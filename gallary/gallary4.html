@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html amp>
+
+<head>
+      <meta charset="utf-8">
+      <title>Tel. 880 708 520 - Wyburzenia i wykopy Śląsk - Katowice</title>
+      <meta name="description"
+            content="Wyburzenia i wykopy cały Śląsk - Katowice. Nasza oferta obejmuje wyburzenia i rozbiórki budynków, obiektów (hal, magazynów), ścian oraz różnego rodzaju wykopy dla firm oraz klientów indywidualnych. Wykopy pod fundamenty, wykopy pod zbiorniki - szamba." />
+      <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+      <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+      <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+      <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+      <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <script async custom-element="amp-position-observer"
+            src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+      <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+      <style amp-boilerplate>
+            body {
+                  -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                  -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                  -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+                  animation: -amp-start 8s steps(1, end) 0s 1 normal both
+            }
+
+            @-webkit-keyframes -amp-start {
+                  from {
+                        visibility: hidden
+                  }
+
+                  to {
+                        visibility: visible
+                  }
+            }
+
+            @-moz-keyframes -amp-start {
+                  from {
+                        visibility: hidden
+                  }
+
+                  to {
+                        visibility: visible
+                  }
+            }
+
+            @-ms-keyframes -amp-start {
+                  from {
+                        visibility: hidden
+                  }
+
+                  to {
+                        visibility: visible
+                  }
+            }
+
+            @-o-keyframes -amp-start {
+                  from {
+                        visibility: hidden
+                  }
+
+                  to {
+                        visibility: visible
+                  }
+            }
+
+            @keyframes -amp-start {
+                  from {
+                        visibility: hidden
+                  }
+
+                  to {
+                        visibility: visible
+                  }
+            }
+      </style><noscript>
+            <style amp-boilerplate>
+                  body {
+                        -webkit-animation: none;
+                        -moz-animation: none;
+                        -ms-animation: none;
+                        animation: none
+                  }
+            </style>
+      </noscript>
+      <link rel="stylesheet" href="../amp.css">
+      <link rel="stylesheet" href="../demo.css">
+      <style amp-custom>
+            .hamburger {
+                  padding: .8rem .8rem;
+                  font-size: 2rem;
+                  cursor: pointer;
+                  width: 3rem;
+                  height: 3rem;
+
+            }
+
+            #offerImg {
+                  width: .8rem;
+                  margin-top: -.7rem;
+            }
+
+            #dropDownHover li {
+                  list-style: none;
+            }
+
+            .sidebar {
+                  padding: 10px;
+                  margin: 0;
+                  margin-top: 2rem;
+            }
+
+            .sidebar>li {
+                  list-style: none;
+                  margin-bottom: 10px;
+            }
+
+            .sidebar a {
+                  text-decoration: none;
+                  font-size: 1.2rem;
+            }
+
+            .close-sidebar {
+                  font-size: 1.8em;
+                  font-weight: 700;
+                  padding-left: 167px;
+                  cursor: pointer;
+            }
+
+            #sidebar1 {
+                  width: 13rem;
+                  background: orange;
+            }
+
+            .amp-mode-mouse .amp-carousel-button,
+            amp-carousel.i-amphtml-carousel-has-controls .amp-carousel-button,
+            amp-carousel[controls] .amp-carousel-button {
+                  opacity: 1;
+                  visibility: visible;
+                  display: none;
+            }
+
+            /************MAP CSS*****************/
+            iframe {
+                  width: 100%;
+                  height: 100%;
+            }
+
+            .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 100%;
+                  width: 100%;
+            }
+      </style>
+</head>
+
+<body>
+      <header class="art-header headerbar">
+            <div class="navWrapper">
+                  <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+                  <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+                        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0"
+                              class="close-sidebar">✕</div>
+                        <ul class="sidebar">
+                              <li><a href="../index.html" class="active"><img src="../images/home-solid.svg" alt="">
+                                          Strona
+                                          główna</a></li>
+                              <li><a href="../index.html"><img src="../images/address-card-solid.svg" alt=""> O nas</a>
+                              </li>
+                              <li id="" style="position: relative;"><a href="oferta.html"><img
+                                                src="../images/gift-solid.svg" alt=""> Oferta
+                                    </a><img id="offerImg" src="../images/sort-down-solid.svg" alt="">
+                                    <ul class="dropDown1">
+                                          <li><a href="../oferta/wyburzenia.html"><img
+                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                                      Wyburzenia</a></li>
+                                          <li><a href="../oferta/wykopy.html"><img
+                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                                      Wykopy</a>
+                                          </li>
+                                          <li><a href="../oferta/wywoz-gruzu-i-kontenery-na-gruz.html"><img
+                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                                      Wywóz gruzu </a></li>
+                                          <li><a href="../oferta/wywoz-i-utylizacja-odpadow-budowlanych.html"><img
+                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                                      odpadów budowlanych</a></li>
+                                    </ul>
+                              </li>
+                              <li><a href="../referencje.html"><img src="../images/gem-solid.svg" alt=""> Referencje</a>
+                              </li>
+                              <li><a href="gallary1.html"><img src="../images/image-regular.svg" alt=""> Galeria</a>
+                              </li>
+                              <li><a href="#contact"><img src="../images/headset-solid.svg" alt=""> Kontakt</a>
+                              </li>
+                        </ul>
+                  </amp-sidebar>
+                  <div class="logowrapper"><img class="logoimg" src="../images/mainlogo.png" alt="">
+                        <p style="margin-top: -.3rem;">POLDIM</p>
+                  </div>
+            </div>
+            <!--__________________________Desktop Navbar area_____________________________-->
+            <nav id="dnone" class="art-nav" style="display: flex;">
+                  <div class="logoWrapper">
+                        <img src="../images/mainlogo.png" style="width: 4rem;" alt=""> <span>POLDIM</span>
+                  </div>
+                  <div class="art-nav-inner">
+                        <ul class="art-hmenu " style="display: flex;">
+                              <li><a href="../index.html" class="active">Strona główna</a></li>
+                              <li><a href="../index.html">O nas</a></li>
+                              <li id="dropDownHover" style="position: relative;"><a href="../oferta.html">Oferta
+                                          <img src="../fontawesome/sort-down-solid.svg" alt=""></a>
+                                    <ul class="dropDown">
+                                          <li><a href="../oferta/wyburzenia.html">Wyburzenia</a></li>
+                                          <li><a href="../oferta/wykopy.html">Wykopy</a></li>
+                                          <li><a href="../oferta/wywoz-gruzu-i-kontenery-na-gruz.html">Wywóz gruzu i
+                                                      kontenery na
+                                                      gruz</a></li>
+                                          <li><a href="../oferta/wywoz-i-utylizacja-odpadow-budowlanych.html">Wywóz i
+                                                      utylizacja
+                                                      odpadów budowlanych</a></li>
+                                    </ul>
+                              </li>
+                              <li><a href="">Referencje</a></li>
+                              <li><a href="gallary1.html">Galeria</a></li>
+                              <li><a href="#contact">Kontakt</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </header>
+      <!--________________________Navbar end_______________________-->
+      <section id="sliderSection">
+            <div class="sliderWrapper">
+                  <amp-carousel width="400" height="268" layout="responsive" type="slides" autoplay delay="5000"
+                        role="region" aria-label="Carousel with autoplay">
+                        <amp-img src="../images/slider/slider.jpg" width="400" height="550" layout="responsive"
+                              alt="a sample image">
+                        </amp-img>
+                        <amp-img src="../images/slider/slider1.jpg" width="400" height="550" layout="responsive"
+                              alt="another sample image"></amp-img>
+                        <amp-img src="../images/slider/slider2.jpg" width="400" height="550" layout="responsive"
+                              alt="and another sample image"></amp-img>
+                  </amp-carousel>
+            </div>
+            <div class="sliderContent" id="sliderContent">
+                  <h1>Wyburzenia Śląsk</h1>
+                  <h3>POLDIM - TEL. 880 708 520</h3>
+                  <p>Szukają Państwo firmy, która zajmie się nie tylko wyburzeniem, ale także
+                        uprzątnięciem gruzu powstałego po rozbiórce - zapraszamy do skorzystania z usług naszej firmy.
+                        Doskonale odnajdziemy się w tym zadaniu, oferując pomoc i wykorzystując nasz profesjonalizm oraz
+                        flotę sprzętów, jaką posiadamy. Wystarczy skontaktować się z nami i ustalić szczegóły.</p>
+                  <div class="sliderBtn"><a href="#contact">Content Us</a></div>
+            </div>
+      </section>
+      <!--__________________________Gallary post_____________________________-->
+      <section id="gallaryPost">
+
+            <div class="container background">
+                  <h1>Szczegóły niektórych naszych udanych prac w różnych miastach </h1>
+                  <div class="row">
+                        <div class="col-12">
+                              <div class="gallaryImgWrapper">
+                                    <img src="../images/Gallary/gallary_13.png" alt=""></div>
+                              <div class="gallaryContentWrapper">
+                                    <h2>Wyburzenia i wykopy Siemianowice Śląskie</h2>
+                                    <p>
+                                          Kłopoty z wyburzaniem lub wykopami ? To nie problem dla naszej firmy.
+                                          Przygotowaliśmy usługę również dla firm budowlanych i dla konsumentów
+                                          prywatnych. Absorbujemy się kompetentnym wyburzaniem obiektów i wykopami. Mamy
+                                          też prywatne kontenery na gruz, które z zapałem wynajmiemy. W dużym wachlarzu
+                                          profesjonalnych usług znajdują się też takie usługi, jak recykling odpadów
+                                          budowniczych. Nienagannie wiemy, jakim sposobem radzić sobie z zadaniami,
+                                          które dotyczą budownictwa. Wiemy także, że wyburzanie lub wykopy to niezbędne
+                                          usługi na placach budowy. Tutaj polecamy usługi fachowców, jacy posiadają
+                                          sprzęt oraz wiedzę, w jaki sposób wyburzać budowle lub ewentualnie jak
+                                          wykonywać wykopy. Sprzęt połączony z profesjonalizmem to znakomite
+                                          rozstrzygnięcie dla każdego, kto szuka pomocy.
+                                          Wykopy i wyburzenia Siemianowice Śląskie Wykopy i wyburzenia Siemianowice
+                                          Śląskie Wykopy i wyburzenia Siemianowice Śląskie
+
+                                          Jeżeli w takim razie poszukujesz ekspertów, którzy są w stanie wyburzyć obiekt
+                                          w sposób bezpieczny oraz zaoferują profesjonalne usługi wykopów lub
+                                          ewentualnie wypożyczenia kontenerów na gruz - zaznajom się z naszą klarowną
+                                          firmą. Gwarantujemy Ci, że lepszej oferty nie odnajdziesz. Świetnie zdajemy
+                                          sobie sprawę z tego, jak ważne jest wyburzanie i oferowanie usług wykopów.
+                                          Wobec tego postanowiliśmy pomóc wszystkim, którzy szukają fachowej pomocy.
+                                          Mamy firmę, która działa na terenie Śląska - tam oferujemy usługi wyburzania,
+                                          wykopów, wypożyczania kontenerów i utylizacji odpadów budowlanych. Jeżeli
+                                          dowolna usługa Cię intryguje, wypróbuj propozycję i podejmij współpracę.
+                                          Zajmiemy się wyburzeniem każdego obiektu bądź wykonaniem każdego fundamentu, a
+                                          na domiar tego zaproponujemy usługi utylizacji odpadów i wywiezienia gruzu.
+                                          Wynajmij u nas kontenery i zatroszcz się o bezpieczeństwo na miejscu prac
+                                          budowniczych. L
+                                    </p>
+                              </div>
+                        </div>
+
+                  </div>
+
+                  <div class="row">
+                        <div class="col-12">
+                              <div class="gallaryImgWrapper">
+                                    <img src="../images/Gallary/gallary_14.png" alt="">
+                              </div>
+                              <div class="gallaryContentWrapper">
+                                    <h2>Wyburzenia i wykopy Mysłowice</h2>
+                                    <p>
+                                          Problemy z wyburzaniem lub wykopami ? To nie kłopot dla naszej klarownej
+                                          firmy. Przygotowaliśmy usługę również dla korporacji budowniczych i dla
+                                          konsumentów prywatnych. Absorbujemy się kompetentnym wyburzaniem budynków i
+                                          wykopami. Mamy także własne kontenery na gruz, jakie ochoczo wynajmiemy. W
+                                          dużym wachlarzu profesjonalnych usług znajdują się również takie usługi, jak
+                                          recykling odpadów budowlanych. Wyśmienicie wiemy, jakim sposobem radzić sobie
+                                          z zadaniami, które dotyczą budownictwa. Zdajemy sobie sprawę z tego też, że
+                                          wyburzanie czy też wykopy to niezbędne usługi na placach budowy. Tutaj
+                                          polecamy usługi specjalistów, jacy mają sprzęt oraz wiedzę, w jaki sposób
+                                          wyburzać obiekty bądź też w jaki sposób wykonywać wykopy. Sprzęt łączny z
+                                          profesjonalizmem to idealne rozwiązanie dla każdego, kto poszukuje pomocy.
+                                          Wykopy i wyburzenia Mysłowice Wykopy i wyburzenia Mysłowice Wykopy i
+                                          wyburzenia Mysłowice
+
+                                          Jeśli więc wyszukujesz fachowców, którzy mogą wyburzyć budynek w sposób
+                                          bezpieczny oraz zaoferują usługi wykopów lub też wypożyczenia kontenerów na
+                                          gruz - zapoznaj się z naszą idealną firmą. Gwarantujemy Ci, że dogodniejszej
+                                          oferty nie znajdziesz. Eksperci z branży budowlanej wyczekują na twoje
+                                          zamówienie. Podejmiemy się każdego wyburzenia bądź wykopów. Posiadamy sprzęt i
+                                          wiedzę, która zezwala nam na oferowanie najlepszych usług na Śląsku.
+                                          Znakomicie znamy realia, umiemy przygotować się do realizacji usługi i co
+                                          najważniejsze - nie narzucamy na ofertę wygórowanego cennika. W rezultacie
+                                          możesz uzyskać usługi profesjonalistów w o wiele niższej cenie. Nie zwlekaj,
+                                          nie szukaj innych rozwiązań - po prostu skontaktuj się z nami. Wyburzenia i
+                                          wykopy już czekają. Bardziej odpowiedniej do Twoich wymagań propozycji na
+                                          pewno nie odnajdziesz - nie czekaj i nie szukaj, napisz już teraz oraz
+                                          skorzystaj.
+
+                                    </p>
+
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="row">
+                        <div class="col-12">
+                              <div class="gallaryImgWrapper">
+                                    <img src="../images/Gallary/gallary_15.png" alt="">
+                              </div>
+                              <div class="gallaryContentWrapper">
+                                    <h2>Wyburzenia i wykopy Jastrzębie-Zdrój</h2>
+                                    <p>
+                                          Oferta dla jakiejkolwiek korporacji budowlanej i dla kontrahentów prywatnych -
+                                          wyburzanie i wykopy. Profesjonalne usługi, jakich pożąda każdy, kto zajmuje
+                                          się budowaniem lub remontami. Dlaczego ? Już objaśniamy - wyburzenia są
+                                          wymagane, gdy pragniemy zlikwidować obiekt oraz zbudować dodatkowy. Nieraz
+                                          wyburzenia budynków są nieodzowne, gdyż starsze budownicze mogą być
+                                          zniszczone, a samorzutne i niekontrolowane zawalenie się obiektu może sprawiać
+                                          liczne problemy. Tutaj rekomendujemy usługi specjalistów, jacy posiadają
+                                          sprzęt i wiedzę, jak wyburzać budowle lub ewentualnie w jaki sposób wykonywać
+                                          wykopy. Ekwipunek łączny z profesjonalizmem to korzystne rozstrzygnięcie dla
+                                          każdego, kto szuka pomocy. Jeżeli więc poszukujesz fachowców, którzy mogą
+                                          wyburzyć budynek w sposób bezpieczny i zaoferują usługi wykopów lub
+                                          ewentualnie wypożyczenia kontenerów na gruz - zaznajom się z naszą idealną
+                                          firmą. Gwarantujemy Tobie, że bardziej odpowiedniej do Twoich wymagań oferty
+                                          nie odnajdziesz.
+                                          Wykopy i wyburzenia Jastrzębie-Zdrój Wykopy i wyburzenia Jastrzębie-Zdrój
+                                          Wykopy i wyburzenia Jastrzębie-Zdrój
+
+                                          Profesjonaliści z branży budowlanej czekają na twoje zamówienie. Podejmiemy
+                                          się każdego wyburzenia lub ewentualnie wykopów. Posiadamy sprzęt oraz wiedzę,
+                                          która pozwala nam na oferowanie najlepszych usług na Śląsku. Perfekcyjnie
+                                          znamy realia, umiemy przygotować się do realizacji usługi i co najważniejsze -
+                                          nie narzucamy na propozycję wygórowanego cennika. W efekcie możesz zdobyć
+                                          usługi fachowców w o wiele niższej cenie. Nie czekaj, nie wyszukuj innych
+                                          rozwiązań - po prostu skontaktuj się z nami. Wyburzenia i wykopy już czekają.
+                                          Dogodniejszej propozycji na pewno nie znajdziesz - nie czekaj oraz nie szukaj,
+                                          napisz już dzisiaj i skorzystaj.
+                                    </p>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="row">
+                        <div class="col-12">
+                              <div class="gallaryImgWrapper">
+                                    <img src="../images/Gallary/gallary_16.png" alt="">
+                              </div>
+                              <div class="gallaryContentWrapper">
+                                    <h2>Wyburzenia i wykopy Jaworzno</h2>
+                                    <p>
+                                          Wyburzanie oraz wykopy to zawiły i równolegle nadzwyczaj przydatny zbiór
+                                          usług. Dlaczego ? Ponieważ zarówno wykopy, oraz wyburzanie pojawiają się w
+                                          dogmacie prac budowniczych. W wypadku wykopów, mowa tutaj o dołach
+                                          melioracyjnych, dołach pod kanalizację czy też fundamentach dla obiektów.
+                                          Wyburzanie to inna baśń, która także związana jest z budownictwem, rozbiórka
+                                          starych budynków, które potrzebują likwidacji lub też wyburzenie budynku, żeby
+                                          zbudować następny - wymogów jest wiele, jednak osób, które umieją
+                                          przeprowadzić bezpieczne wyburzanie i wykopy już znacznie mniej. Tu na
+                                          horyzoncie pojawia się stworzona przez nas korporacja - proponujemy wyburzanie
+                                          oraz wykopy dla każdego klienta. Współpracujemy zarówno z jednostkami
+                                          budowlanymi i prywatnymi odbiorcami, którzy poszukują ekspertów. Wyburzyliśmy
+                                          setki budynków, wykopaliśmy tysiące fundamentów.
+                                          Wykopy i wyburzenia Jaworzno Wykopy i wyburzenia Jaworzno Wykopy i wyburzenia
+                                          Jaworzno
+
+                                          W ogromnej ofercie firmy znajdziesz również możliwość wynajęcia kontenerów i
+                                          utylizację odpadów budowlanych. Proponujemy kompleksowe usługi, które są
+                                          potrzebne na placach budowy. W jednostce gospodarczej pracują profesjonaliści,
+                                          którzy świetnie znają się na wyburzaniu i pracy związanej z wykopami. Mamy
+                                          sprzęt, wiedzę, możliwości i chęć, żeby podjąć się każdego zadania. Jeśli
+                                          wyszukujesz zawodowców, którzy oferują wyburzanie i wykopy - ten punkt jest
+                                          dla Ciebie. Wejdź na oficjalną witrynę oraz tam poznaj szczegóły oferty.
+                                          Prędko pojmiesz, że masz do czynienia z ekspertami, którzy zdają sobie sprawę
+                                          z tego, jak przeprowadzić wyburzanie lub ewentualnie jak zająć się wykopami.
+                                          Porywająca oferta dla każdego. Na dodatek możliwość najmu kontenerów oraz
+                                          utylizacji odpadów budowlanych - w jednym miejscu posiadasz wszystko, czego
+                                          poszukujesz.
+                                    </p>
+                              </div>
+                        </div>
+
+                  </div>
+
+                  <div class="pagination">
+                        <ul>
+                              <li><a href="gallary3.html"><img src="../images/chevron-left-solid.svg" alt=""></a></li>
+                              <li><a href="gallary2.html">1</a></li>
+                              <li><a href="gallary2.html">2</a></li>
+                              <li><a href="gallary3.html">3</a></li>
+                              <li><a href="gallary4.html">4</a></li>
+                        </ul>
+                  </div>
+
+            </div>
+      </section>
+
+
+
+      <!--__________________________Footer area_____________________________-->
+
+      <footer id="contact" class="art-footer">
+            <div class="topWrapper">
+                  <h2>kontakt</h2>
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-12 col-md-6">
+                                    <div class="contactWrapper">
+                                          <div class="imgDiv"><img src="../images/map-marker-alt-solid.svg" alt="">
+                                          </div>
+                                          <h3>Address</h3>
+                                          <ul>
+                                                <li><a href="">POLDIM Piotr Małek</a></li>
+                                                <li class="pt-3"><a href="">Tel. 880 708 520</a></li>
+                                                <li><a href="">Tel. 511 572 158</a></li>
+                                                <li class="pt-3"><a href="">Email: darek410@vp.pl</a></li>
+                                                <li><a style="font-weight: 500;" href="">Address: ul.
+                                                            Podgórna 14, 43-195
+                                                            Mikołów,</a>
+                                                </li>
+                                                <li><a style="font-weight: 500;" href="">powiat mikołowski,
+                                                            woj. ŚLĄSKIE</a></li>
+                                                <li class="pt-3"><a href="">Obszar usług: cały Śląsk</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                    <div class="mapWrapper">
+
+                                          <div class="gmap_canvas"><iframe id="gmap_canvas"
+                                                      src="https://maps.google.com/maps?q=aleja%20Ro%C5%BAdzie%C5%84skiego%2097,%2040-203%20Katowice,%20Poland&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                                      frameborder="0" scrolling="no" marginheight="0"
+                                                      marginwidth="0"></iframe>
+
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="copyRight">
+                  <div class="container">
+                        <div class="tabTop">
+                              <a href="#dnone">
+                                    <img src="../images/sort-alpha-up-solid.svg" style="width: 2rem;" alt=""> </a>
+                        </div>
+                        <p>Copyright &copy; 2015 - POLDIM - WYBURZENIA I WYKOPY. All Rights Reserved.</p>
+                        <p><a href="http://www.interprom.pl" title="strony www" target="_blank">Strony www</a> & <a
+                                    href="http://www.interprom.pl" title="pozycjonowanie"
+                                    target="_blank">pozycjonowanie</a> & <a href="http://www.interprom.pl"
+                                    title="linki sponsorowane" target="_blank">linki sponsorowane</a>
+                              Interprom.pl.
+                              <p><a href="./polityka-cookies.html">Polityka cookies</a> | <a
+                                          href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a
+                                          href="./sitemap.xml">Mapa
+                                          strony</a></p>
+                        </p>
+                        <div class="company">
+                              <a target="_top" href="http://stat.4u.pl/?wyburzeniaiwykopypl"
+                                    title="statystyki stron WWW"><img alt="stat4u" src="http://adstat.4u.pl/s4u.gif"
+                                          border="0"></a>
+
+                        </div>
+                  </div>
+
+            </div>
+      </footer>
+</body>
+
+</html>
