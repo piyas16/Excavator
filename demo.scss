@@ -41,25 +41,14 @@ p {
             padding: .4rem;
 
 
-            h1 {
-                  position: relative;
-                  padding: 1rem 0;
-
-                  &::after {
-                        content: "";
-                        position: absolute;
-                        background: orange;
-                        width: 18rem;
-                        height: .3rem;
-                        top: 4rem;
-                        left: 0rem;
-                        // border: 2px solid beige;
-                  }
+            h3 {
+                  color: black;
+                  padding-top: .5rem;
             }
 
-            // p {}
+            p {color: #000;}
 
-            // .contentWrapper {}
+          
             .sliderBtn {
                   background: orange;
                   width: 7rem;
@@ -79,12 +68,14 @@ p {
 /*****************************Servicee Section css*************************************/
 #ourService {
       padding: 2rem 0rem;
+      background: #fff;
 
       h2 {
             width: 13rem;
             text-align: center;
             margin: auto;
             position: relative;
+            color: #000;
 
             &::after {
                   content: "";
@@ -126,6 +117,7 @@ p {
 
                   p {
                         padding-top: .3rem;
+                        color: #000;
                   }
 
                   .btn1 {
@@ -206,7 +198,7 @@ p {
       h2 {
             width: 9rem;
             text-align: center;
-            margin: auto;
+            margin: auto; color: #000;
             position: relative;
 
             &::after {
@@ -224,7 +216,7 @@ p {
             padding: 2rem 0rem;
 
             p {
-                  text-align: justify;
+                  text-align: justify; color: #000;
             }
       }
 }
@@ -238,7 +230,7 @@ p {
             width: 9rem;
             text-align: center;
             margin: auto;
-            position: relative;
+            position: relative; color: #000;
 
             &::after {
                   content: "";
@@ -255,7 +247,7 @@ p {
             padding: 2rem 0rem;
 
             p {
-                  text-align: justify;
+                  text-align: justify; color: #000;
             }
       }
 }
@@ -263,12 +255,13 @@ p {
 /*****************************GallarySection css*************************************/
 #gallarySection {
       padding: 2rem 0rem;
+      background: #fff;
 
       h2 {
             width: 9rem;
             text-align: center;
             margin: auto;
-            position: relative;
+            position: relative; color: #000;
 
             &::after {
                   content: "";
@@ -284,7 +277,7 @@ p {
       p {
             padding: 1rem 0rem;
             text-align: center;
-            font-size: clamp(1rem, 2.5vw, 1.5em);
+            font-size: clamp(1rem, 2.5vw, 1.5em); color: #000;
       }
 
       .imgContentWrapper {
@@ -308,7 +301,7 @@ p {
                   h4 {
                         font-size: clamp(1rem, 2.5vw, 1.1rem);
                         text-align: center;
-                        text-decoration: underline;
+                        text-decoration: underline; color: #000;
 
                   }
 
@@ -316,7 +309,7 @@ p {
                         text-align: center;
                         font-size: clamp(0.8rem, 2.5vw, .9rem);
                         margin-top: -1.5rem;
-                        line-height: 1.2rem;
+                        line-height: 1.2rem; color: #000;
                   }
             }
       }
@@ -399,17 +392,6 @@ p {
                         font-size: 2.2rem;
                   }
 
-                  // &::after {
-                  //       content: "";
-                  //       background: #000000b5;
-                  //       opacity: 1;
-                  //       width: 100%;
-                  //       height: 100%;
-                  //       position: absolute;
-                  //       top: 0rem;
-                  //       left: 0rem;
-                  // }
-
                   ul {
                         margin-left: -1rem;
 
@@ -436,7 +418,8 @@ p {
             padding: .8rem 0rem;
             position: relative;
 
-            .tabTop {
+            .tabTop {width: 3rem;
+                  height: 3rem;
                   position: absolute;
                   top: -3.5rem;
                   right: 1rem;
@@ -470,13 +453,14 @@ p {
 /***************************Oferta CSS***************************************/
 #ofertaPost {
       padding: 2rem .5rem;
-      clear: both;
+      clear: both; background: #fff;
 
       .box-shaddow {
             box-shadow: 1px 1px 1px 1px rgb(207, 196, 196);
 
             .ofertaContentwrapper {
                   padding: 1.5rem 0rem;
+                  background: #fff;
 
                   h2 {
                         color: rgb(0, 0, 0);
@@ -494,10 +478,11 @@ p {
 /***************************gallary CSS***************************************/
 #gallaryPost {
       margin: 3rem 0rem;
+      background: #fff;
 
       .background {
             background-color: #0404040a;
-            ;
+            
       }
 
       h1 {
@@ -528,7 +513,7 @@ p {
                   border-bottom: 3px solid #000;
             }
 
-            p {}
+            p {color: #000;}
       }
 
       .pagination {

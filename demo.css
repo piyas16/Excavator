@@ -41,19 +41,13 @@ p {
   padding: .4rem;
 }
 
-#sliderSection .sliderContent h1 {
-  position: relative;
-  padding: 1rem 0;
+#sliderSection .sliderContent h3 {
+  color: black;
+  padding-top: .5rem;
 }
 
-#sliderSection .sliderContent h1::after {
-  content: "";
-  position: absolute;
-  background: orange;
-  width: 18rem;
-  height: .3rem;
-  top: 4rem;
-  left: 0rem;
+#sliderSection .sliderContent p {
+  color: #000;
 }
 
 #sliderSection .sliderContent .sliderBtn {
@@ -73,6 +67,7 @@ p {
 /*****************************Servicee Section css*************************************/
 #ourService {
   padding: 2rem 0rem;
+  background: #fff;
 }
 
 #ourService h2 {
@@ -80,6 +75,7 @@ p {
   text-align: center;
   margin: auto;
   position: relative;
+  color: #000;
 }
 
 #ourService h2::after {
@@ -108,6 +104,7 @@ p {
 
 #ourService .col .serviceContentWrapper p {
   padding-top: .3rem;
+  color: #000;
 }
 
 #ourService .col .serviceContentWrapper .btn1 {
@@ -188,6 +185,7 @@ p {
   width: 9rem;
   text-align: center;
   margin: auto;
+  color: #000;
   position: relative;
 }
 
@@ -207,6 +205,7 @@ p {
 
 #aboutUs .aboutContentWrapper p {
   text-align: justify;
+  color: #000;
 }
 
 /*****************************offerSection css*************************************/
@@ -220,6 +219,7 @@ p {
   text-align: center;
   margin: auto;
   position: relative;
+  color: #000;
 }
 
 #offerSection h2::after {
@@ -238,11 +238,13 @@ p {
 
 #offerSection .offerContentWrapper p {
   text-align: justify;
+  color: #000;
 }
 
 /*****************************GallarySection css*************************************/
 #gallarySection {
   padding: 2rem 0rem;
+  background: #fff;
 }
 
 #gallarySection h2 {
@@ -250,6 +252,7 @@ p {
   text-align: center;
   margin: auto;
   position: relative;
+  color: #000;
 }
 
 #gallarySection h2::after {
@@ -266,6 +269,7 @@ p {
   padding: 1rem 0rem;
   text-align: center;
   font-size: clamp(1rem, 2.5vw, 1.5em);
+  color: #000;
 }
 
 #gallarySection .imgContentWrapper {
@@ -288,6 +292,7 @@ p {
   font-size: clamp(1rem, 2.5vw, 1.1rem);
   text-align: center;
   text-decoration: underline;
+  color: #000;
 }
 
 #gallarySection .imgContentWrapper .gallaryContent p {
@@ -295,6 +300,7 @@ p {
   font-size: clamp(0.8rem, 2.5vw, 0.9rem);
   margin-top: -1.5rem;
   line-height: 1.2rem;
+  color: #000;
 }
 
 /*****************************footer css*************************************/
@@ -400,6 +406,8 @@ p {
 }
 
 .art-footer .copyRight .tabTop {
+  width: 3rem;
+  height: 3rem;
   position: absolute;
   top: -3.5rem;
   right: 1rem;
@@ -430,6 +438,7 @@ p {
 #ofertaPost {
   padding: 2rem .5rem;
   clear: both;
+  background: #fff;
 }
 
 #ofertaPost .box-shaddow {
@@ -439,6 +448,7 @@ p {
 
 #ofertaPost .box-shaddow .ofertaContentwrapper {
   padding: 1.5rem 0rem;
+  background: #fff;
 }
 
 #ofertaPost .box-shaddow .ofertaContentwrapper h2 {
@@ -453,6 +463,7 @@ p {
 /***************************gallary CSS***************************************/
 #gallaryPost {
   margin: 3rem 0rem;
+  background: #fff;
 }
 
 #gallaryPost .background {
@@ -480,6 +491,10 @@ p {
   padding: 1rem 0rem;
   text-align: center;
   border-bottom: 3px solid #000;
+}
+
+#gallaryPost .gallaryContentWrapper p {
+  color: #000;
 }
 
 #gallaryPost .pagination ul {
