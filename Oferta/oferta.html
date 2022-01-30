@@ -11,9 +11,7 @@
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
       <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
       <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-      <script async src="https://cdn.ampproject.org/v0.js"></script>
-      <script async custom-element="amp-position-observer"
-            src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+      <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
       <style amp-boilerplate>
             body {
@@ -82,9 +80,10 @@
                   }
             </style>
       </noscript>
-      <link rel="stylesheet" href="../amp.css">
-      <link rel="stylesheet" href="../demo.css">
       <style amp-custom>
+            /****************amp bootstrap css**********************/
+*,::after,::before{box-sizing:border-box}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:"Roboto Condensed",sans-serif;font-weight:400;line-height:1.5;text-align:left;font-size:1rem}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul{margin-bottom:0}a:hover{text-decoration:underline}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-weight:400;line-height:1.2}.h1,h1{font-size:2.5rem}@media (max-width:1200px){.h1,h1{font-size:calc(1.375rem + 1.5vw)}}.h2,h2{font-size:2rem}@media (max-width:1200px){.h2,h2{font-size:calc(1.325rem + .9vw)}}.h3,h3{font-size:1.25rem}.h4,h4{font-size:1.15rem}.h5,h5{font-size:1rem}.h6,h6{font-size:1rem}amp-img,img{border:0}amp-img[class^=-amp],amp-img[class^=i-amp]{height:auto;max-width:100%}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid,.container-lg,.container-md,.container-sm,.container-xl{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}}@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.col-1{flex:0 0 8.33333%;max-width:8.33333%}.col-2{flex:0 0 16.66667%;max-width:16.66667%}.col-3{flex:0 0 25%;max-width:25%}.col-4{flex:0 0 33.33333%;max-width:33.33333%}.col-5{flex:0 0 41.66667%;max-width:41.66667%}.col-6{flex:0 0 50%;max-width:50%}.col-7{flex:0 0 58.33333%;max-width:58.33333%}.col-8{flex:0 0 66.66667%;max-width:66.66667%}.col-9{flex:0 0 75%;max-width:75%}.col-10{flex:0 0 83.33333%;max-width:83.33333%}.col-11{flex:0 0 91.66667%;max-width:91.66667%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.col-sm{flex-basis:0;flex-grow:1;max-width:100%}.col-sm-1{flex:0 0 8.33333%;max-width:8.33333%}.col-sm-2{flex:0 0 16.66667%;max-width:16.66667%}.col-sm-3{flex:0 0 25%;max-width:25%}.col-sm-4{flex:0 0 33.33333%;max-width:33.33333%}.col-sm-5{flex:0 0 41.66667%;max-width:41.66667%}.col-sm-6{flex:0 0 50%;max-width:50%}.col-sm-7{flex:0 0 58.33333%;max-width:58.33333%}.col-sm-8{flex:0 0 66.66667%;max-width:66.66667%}.col-sm-9{flex:0 0 75%;max-width:75%}.col-sm-10{flex:0 0 83.33333%;max-width:83.33333%}.col-sm-11{flex:0 0 91.66667%;max-width:91.66667%}.col-sm-12{flex:0 0 100%;max-width:100%}}@media (min-width:768px){.col-md{flex-basis:0;flex-grow:1;max-width:100%}.col-md-1{flex:0 0 8.33333%;max-width:8.33333%}.col-md-2{flex:0 0 16.66667%;max-width:16.66667%}.col-md-3{flex:0 0 25%;max-width:25%}.col-md-4{flex:0 0 33.33333%;max-width:33.33333%}.col-md-5{flex:0 0 41.66667%;max-width:41.66667%}.col-md-6{flex:0 0 50%;max-width:50%}.col-md-7{flex:0 0 58.33333%;max-width:58.33333%}.col-md-8{flex:0 0 66.66667%;max-width:66.66667%}.col-md-9{flex:0 0 75%;max-width:75%}.col-md-10{flex:0 0 83.33333%;max-width:83.33333%}.col-md-11{flex:0 0 91.66667%;max-width:91.66667%}.col-md-12{flex:0 0 100%;max-width:100%}}@media (min-width:992px){.col-lg{flex-basis:0;flex-grow:1;max-width:100%}.col-lg-1{flex:0 0 8.33333%;max-width:8.33333%}.col-lg-2{flex:0 0 16.66667%;max-width:16.66667%}.col-lg-3{flex:0 0 25%;max-width:25%}.col-lg-4{flex:0 0 33.33333%;max-width:33.33333%}.col-lg-5{flex:0 0 41.66667%;max-width:41.66667%}.col-lg-6{flex:0 0 50%;max-width:50%}.col-lg-7{flex:0 0 58.33333%;max-width:58.33333%}.col-lg-8{flex:0 0 66.66667%;max-width:66.66667%}.col-lg-9{flex:0 0 75%;max-width:75%}.col-lg-10{flex:0 0 83.33333%;max-width:83.33333%}.col-lg-11{flex:0 0 91.66667%;max-width:91.66667%}.col-lg-12{flex:0 0 100%;max-width:100%}}@media (min-width:1200px){.col-xl{flex-basis:0;flex-grow:1;max-width:100%}.col-xl-1{flex:0 0 8.33333%;max-width:8.33333%}.col-xl-2{flex:0 0 16.66667%;max-width:16.66667%}.col-xl-3{flex:0 0 25%;max-width:25%}.col-xl-4{flex:0 0 33.33333%;max-width:33.33333%}.col-xl-5{flex:0 0 41.66667%;max-width:41.66667%}.col-xl-6{flex:0 0 50%;max-width:50%}.col-xl-7{flex:0 0 58.33333%;max-width:58.33333%}.col-xl-8{flex:0 0 66.66667%;max-width:66.66667%}.col-xl-9{flex:0 0 75%;max-width:75%}.col-xl-10{flex:0 0 83.33333%;max-width:83.33333%}.col-xl-11{flex:0 0 91.66667%;max-width:91.66667%}.col-xl-12{flex:0 0 100%;max-width:100%}}
+            /*******************bootstrap css end******************/
             .hamburger {
                   padding: .8rem .8rem;
                   font-size: 2rem;
@@ -117,7 +116,8 @@
 
             .sidebar a {
                   text-decoration: none;
-                  font-size: 1.2rem;
+                  font-size: 1rem;
+                  color: #000;
             }
 
             .close-sidebar {
@@ -134,7 +134,7 @@
             }
 
             .amp-mode-mouse .amp-carousel-button,
-            amp-carousel.i-amphtml-carousel-has-controls .amp-carousel-button,
+            amp-carousel.amp-carousel-button,
             amp-carousel[controls] .amp-carousel-button {
                   opacity: 1;
                   visibility: visible;
@@ -149,15 +149,521 @@
 
             .gmap_canvas {
                   overflow: hidden;
-                  background: none !important;
+                  background: none;
                   height: 100%;
                   width: 100%;
             }
+
+            /*******************CUSTOM CSS**********************/
+            body {
+                  padding: 0%;
+                  margin: 0%;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  scroll-behavior: smooth;
+                  list-style: none;
+            }
+
+            a {
+                  text-decoration: none;
+            }
+
+            h1 {
+                  font-size: clamp(1.1rem, 2.5vw, 4em);
+                  color: #4C4C4C;
+                  font-weight: 700;
+            }
+
+            h3 {
+                  font-size: clamp(1rem, 2.5vw, 1.4em);
+            }
+
+            p {
+                  text-align: justify;
+                  font-size: .9rem;
+            }
+            .styckeyNavbar {
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                  z-index: 1000000;
+            }
+
+            /*****************************Slider css*************************************/
+            #sliderSection {
+                  position: relative;
+                  top: 4.2rem;
+            }
+
+            #sliderSection .sliderContent {
+                  position: absolute;
+                  top: 30%;
+                  left: 6%;
+                  width: 80%;
+                  background: #ffffffde;
+                  z-index: 2;
+                  border-radius: .5rem;
+                  padding: .4rem;
+            }
+
+            #sliderSection .sliderContent h3 {
+                  color: black;
+                  padding-top: .5rem;
+            }
+
+            #sliderSection .sliderContent p {
+                  color: #000;
+            }
+
+            #sliderSection .sliderContent .sliderBtn {
+                  background: orange;
+                  width: 7rem;
+                  padding: .3rem;
+                  text-align: center;
+                  border-radius: 5px;
+                  height: 2.2rem;
+            }
+
+            #sliderSection .sliderContent .sliderBtn:hover {
+                  border: 1px solid #000;
+                  background: #fff;
+            }
+
+            /*****************************footer css*************************************/
+            .art-footer {
+                  background: #dfdddd;
+            }
+
+            .art-footer h2 {
+                  text-align: center;
+                  padding: 2rem 0rem;
+                  font-weight: 700;
+                  color: orange;
+                  position: relative;
+                  z-index: 2;
+                  width: 6rem;
+                  margin: auto;
+            }
+
+            .art-footer h2::after {
+                  content: "";
+                  position: absolute;
+                  background: orange;
+                  width: 11rem;
+                  height: .3rem;
+                  top: 4.5rem;
+                  left: -2rem;
+            }
+
+            .art-footer .topWrapper {
+                  background-image: url("../images/slider/footer.jpg");
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  position: relative;
+                  padding-top: 0rem;
+                  padding-bottom: 3rem;
+            }
+
+            .art-footer .topWrapper::after {
+                  content: "";
+                  background: #000000b5;
+                  opacity: 1;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  top: 0rem;
+                  left: 0rem;
+            }
+
+            .art-footer .topWrapper .col-12 {
+                  z-index: 1;
+                  margin: 2rem 0rem;
+            }
+
+            .art-footer .topWrapper .contactWrapper {
+                  position: relative;
+                  width: 100%;
+                  height: 20rem;
+                  margin: auto;
+                  background: #ffffffc4;
+            }
+
+            .art-footer .topWrapper .contactWrapper .imgDiv {
+                  position: absolute;
+                  top: 5rem;
+                  right: 3rem;
+            }
+
+            .art-footer .topWrapper .contactWrapper .imgDiv img {
+                  width: 8rem;
+            }
+
+            .art-footer .topWrapper .contactWrapper h3 {
+                  text-align: center;
+                  padding: .5rem 0rem;
+                  color: #000;
+                  font-size: 2.2rem;
+            }
+
+            .art-footer .topWrapper .contactWrapper ul {
+                  margin-left: -1rem;
+            }
+
+            .art-footer .topWrapper .contactWrapper ul li {
+                  list-style: none;
+            }
+
+            .art-footer .topWrapper .contactWrapper ul li a {
+                  color: #000;
+                  font-size: clamp(0.9rem, 2.5vw, 1em);
+                  line-height: 2rem;
+                  font-weight: bold;
+            }
+
+            .art-footer .topWrapper .mapWrapper {
+                  width: 100%;
+                  height: 20rem;
+            }
+
+            .art-footer .copyRight {
+                  padding: .8rem 0rem;
+                  position: relative;
+            }
+
+            .art-footer .copyRight .tabTop {
+                  width: 3rem;
+                  height: 3rem;
+                  position: absolute;
+                  top: -3.5rem;
+                  right: 1rem;
+                  background: #ffae00;
+                  padding: .4rem;
+                  border-radius: 100%;
+            }
+
+            .art-footer .copyRight p {
+                  text-align: left;
+                  font-size: clamp(0.6rem, 2.5vw, 1em);
+                  margin-bottom: .2rem;
+                  margin-left: 1rem;
+                  color: #000;
+                  font-weight: 500;
+            }
+
+            .art-footer .copyRight a {
+                  color: #000;
+            }
+
+            .art-footer .copyRight .company {
+                  padding-top: .8rem;
+                  margin-left: 1rem;
+            }
+
+            /***************************Oferta CSS***************************************/
+            #ofertaPost {
+                  padding: 9rem .5rem;
+                  clear: both;
+                  background: #fff;
+            }
+
+            #ofertaPost .box-shaddow {
+                  -webkit-box-shadow: 1px 1px 1px 1px #cfc4c4;
+                  box-shadow: 1px 1px 1px 1px #cfc4c4;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper {
+                  padding: 1.5rem 0rem;
+                  background: #fff;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper h2 {
+                  color: black;
+                  font-weight: 600;
+                  text-align: center;
+                  padding-bottom: .8rem;
+                  margin-bottom: 1.5rem;
+                  border-bottom: 2px solid red;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper p {
+                  color: #000;
+            }
+
+            /***************************RESPONSIVE CSS***************************************/
+            /* *************************Responsive css ****************************
+    ***********************************************************************/
+            @media only screen and (max-width: 448px) {
+                  .art-footer .topWrapper .contactWrapper .imgDiv img {
+                        display: none;
+                  }
+            }
+
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 768px) {
+                  #sliderSection .sliderContent {
+                        width: 88%;
+                  }
+                  #sliderContent {
+                        width: 88%;
+                        margin: auto;
+                  }
+
+                  #sliderContent h1 {
+                        width: 10.1rem;
+                        margin: auto;
+                  }
+
+                  #sliderContent h1::after {
+                        display: none;
+                  }
+
+                  #sliderContent h3 {
+                        text-align: center;
+                  }
+
+                  #sliderContent p {
+                        display: none;
+                  }
+
+                  #sliderContent .sliderBtn {
+                        margin: .5rem auto;
+                  }
+
+                  .navWrapper {
+                        background: white;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                        justify-content: space-between;
+                        position: relative;
+                  }
+
+                  .navWrapper::before {
+                        display: none;
+                  }
+
+                  .navWrapper .logowrapper {
+                        margin-right: 3rem;
+                        height: 4.5rem;
+                  }
+
+                  .navWrapper .logowrapper .logoimg {
+                        width: 4rem;
+                        height: 3rem;
+                  }
+
+                  .sidebar li a img {
+                        width: 1.3rem;
+                  }
+
+                  #dnone {
+                        display: none;
+                        -webkit-transform: scaleY(0);
+                        transform: scaleY(0);
+                        height: 0rem;
+                  }
+
+                  .dropDown1 {
+                        -webkit-transition: all .5s;
+                        transition: all .5s;
+                        -webkit-transform-origin: top;
+                        transform-origin: top;
+                        -webkit-transform: scaleY(0);
+                        transform: scaleY(0);
+                        height: 0rem;
+                        margin-top: .7rem;
+                  }
+
+                  .dropDown1 li {
+                        width: 12rem;
+                        margin-left: -2rem;
+                        list-style: none;
+                  }
+
+                  .dropDown1 li a {
+                        color: #000;
+                        display: block;
+                        font-size: .9rem;
+                        padding: .2rem 0;
+                  }
+
+                  .dropDown1 li a:hover {
+                        color: #540bf5;
+                        -webkit-text-decoration: navajowhite;
+                        text-decoration: navajowhite;
+                  }
+
+                  .dropDown1 {
+                        -webkit-transform: scaleY(1);
+                        transform: scaleY(1);
+                        height: 7.8rem;
+                  }
+
+                  .art-footer .topWrapper .contactWrapper {
+                        position: relative;
+                        width: 100%;
+                        height: 20rem;
+                        margin: auto;
+                        margin-bottom: auto;
+                        background: #ffffffc4;
+                        margin-bottom: 2rem;
+                  }
+            }
+
+            @media only screen and (max-width: 992px) {
+                  #sliderSection .sliderContent h1::after {
+                        top: 3rem;
+                  }
+            }
+
+            @media only screen and (min-width: 768px) {
+                  .navWrapper::before {
+                        display: none;
+                  }
+
+                  .sliderWrapper {
+                        width: 100%;
+                        height: 88.5vh;
+                  }
+
+                  .sliderheight {
+                        overflow: hidden;
+                        height: 100%;
+                  }
+
+                  .textHeader {
+                        margin-top: 7rem;
+                  }
+
+                  .navWrapper {
+                        display: none;
+                  }
+
+                  .hamburger {
+                        display: none;
+                  }
+
+                  .art-nav {
+                        width: 100%;
+                        background: #fff;
+                        position: relative;
+                  }
+
+
+                  .art-nav .logoWrapper {
+                        margin-left: 4rem;
+                  }
+
+                  .art-nav .art-nav-inner {
+                        width: 100%;
+                  }
+
+                  .art-nav .art-nav-inner .art-hmenu {
+                        width: 85%;
+                        margin: auto;
+                        -webkit-box-pack: end;
+                        -ms-flex-pack: end;
+                        justify-content: end;
+                        padding: .6rem 0;
+                  }
+
+                  .art-nav .art-nav-inner .art-hmenu li {
+                        list-style: none;
+                        margin: .6rem;
+                  }
+
+                  .art-nav .art-nav-inner .art-hmenu li a {
+                        font-size: clamp(1rem, 2vw, 1.2rem);
+                        display: block;
+                        color: #000;
+                  }
+
+                  .art-nav .art-nav-inner .art-hmenu li a img {
+                        width: .8rem;
+                        margin-top: -.7rem;
+                  }
+
+                  .art-nav .art-nav-inner .art-hmenu li .dropDown {
+                        position: absolute;
+                        background: #fdfdfd;
+                        top: 3.1rem;
+                        left: -1rem;
+                        border-top: 1px solid orange;
+                        width: 17.3rem;
+                        z-index: 3;
+                        -webkit-transition: all .4s;
+                        transition: all .4s;
+                        -webkit-transform-origin: top;
+                        transform-origin: top;
+                        -webkit-transform: scaleY(0);
+                        transform: scaleY(0);
+                  }
+
+                  .art-nav .art-nav-inner .art-hmenu li .dropDown li {
+                        width: 100%;
+                        margin-left: -2rem;
+                        list-style: none;
+                  }
+
+                  .art-nav .art-nav-inner .art-hmenu li .dropDown li a {
+                        color: #000;
+                        display: block;
+                        font-size: .9rem;
+                  }
+            }
+
+            #dropDownHover:hover .dropDown {
+                  -webkit-transform: scaleY(1);
+                  transform: scaleY(1);
+            }
+
+            /* // Extra small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) {
+                  .imgContentWrapper {
+                        height: auto;
+                  }
+
+                  .imgContentWrapper .gallaryImgWrapper img {
+                        height: auto;
+                  }
+
+                  .imgDiv {
+                        position: absolute;
+                        top: 4rem;
+                        right: 1rem;
+                  }
+
+                  .imgDiv img {
+                        width: 5rem;
+                  }
+            }
+
+            @media (min-width: 576px) {
+                  .imgContentWrapper {
+                        height: 16rem;
+                  }
+
+                  .imgContentWrapper .gallaryImgWrapper img {
+                        height: 11rem;
+                  }
+            }
+
+            /* // Medium devices (tablets, 768px and up) */
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                  .art-footer .topWrapper .contactWrapper .imgDiv img {
+                        display: none;
+                  }
+            }         
+            .amp-sidebar-mask{z-index: 3;}
+
       </style>
 </head>
 
 <body>
-      <header class="art-header headerbar">
+      <header class="art-header headerbar styckeyNavbar">
             <div class="navWrapper">
                   <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
                   <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
@@ -167,30 +673,27 @@
                               <li><a href="../index.html" class="active"><img src="../images/home-solid.svg" alt="">
                                           Strona
                                           główna</a></li>
-                              <li><a href="../index.html"><img src="../images/address-card-solid.svg" alt=""> O nas</a>
+                              <li><a href="../onas.html"><img src="../images/address-card-solid.svg" alt=""> O nas</a>
                               </li>
-                              <li id="" style="position: relative;"><a href="#post1"><img
-                                                src="../images/gift-solid.svg" alt=""> Oferta
+                              <li id="" style="position: relative;"><a href="#post1"><img src="../images/gift-solid.svg"
+                                                alt=""> Oferta
                                     </a><img id="offerImg" src="../images/sort-down-solid.svg" alt="">
                                     <ul class="dropDown1">
-                                          <li><a href="#post2"><img
-                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                          <li><a href="#post2"><img src="../images/arrow-circle-right-solid.svg" alt="">
                                                       Wyburzenia</a></li>
-                                          <li><a href="#post3"><img
-                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                          <li><a href="#post3"><img src="../images/arrow-circle-right-solid.svg" alt="">
                                                       Wykopy</a>
                                           </li>
-                                          <li><a href="#post4"><img
-                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                          <li><a href="#post4"><img src="../images/arrow-circle-right-solid.svg" alt="">
                                                       Wywóz gruzu </a></li>
-                                          <li><a href="#post5"><img
-                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                          <li><a href="#post5"><img src="../images/arrow-circle-right-solid.svg" alt="">
                                                       odpadów budowlanych</a></li>
                                     </ul>
                               </li>
-                              <li><a href="../referencje.html"><img src="../images/gem-solid.svg" alt=""> Referencje</a>
+                              <li><a href="../faq.html"><img src="../images/gem-solid.svg" alt=""> FAQ</a>
                               </li>
-                              <li><a href="../gallary/gallary1.html"><img src="../images/image-regular.svg" alt=""> Galeria</a>
+                              <li><a href="../gallary/gallary1.html"><img src="../images/image-regular.svg" alt="">
+                                          Galeria</a>
                               </li>
                               <li><a href="#contact"><img src="../images/headset-solid.svg" alt=""> Kontakt</a>
                               </li>
@@ -203,12 +706,13 @@
             <!--__________________________Desktop Navbar area_____________________________-->
             <nav id="dnone" class="art-nav" style="display: flex;">
                   <div class="logoWrapper">
-                        <img src="../images/mainlogo.png" style="width: 4rem;" alt=""> <span style="color: #000;">POLDIM</span>
+                        <img src="../images/mainlogo.png" style="width: 4rem;" alt=""> <span
+                              style="color: #000;">POLDIM</span>
                   </div>
                   <div class="art-nav-inner">
                         <ul class="art-hmenu " style="display: flex;">
                               <li><a href="../index.html" class="active">Strona główna</a></li>
-                              <li><a href="../index.html">O nas</a></li>
+                              <li><a href="../onas.html">O nas</a></li>
                               <li id="dropDownHover" style="position: relative;"><a href="#post1">Oferta
                                           <img src="../fontawesome/sort-down-solid.svg" alt=""></a>
                                     <ul class="dropDown">
@@ -222,7 +726,7 @@
                                                       odpadów budowlanych</a></li>
                                     </ul>
                               </li>
-                              <li><a href="../referencje.html">Referencje</a></li>
+                              <li><a href="../faq.html">FAQ</a></li>
                               <li><a href="../gallary/gallary1.html">Galeria</a></li>
                               <li><a href="#contact">Kontakt</a></li>
                         </ul>
@@ -232,8 +736,8 @@
       <!--________________________Navbar end_______________________-->
       <section id="sliderSection">
             <div class="sliderWrapper">
-                  <amp-carousel width="400" height="268" layout="responsive" type="slides" autoplay delay="5000"
-                        role="region" aria-label="Carousel with autoplay">
+                  <amp-carousel class="sliderheight" width="400" height="268" layout="responsive" type="slides" autoplay
+                        delay="5000" role="region" aria-label="Carousel with autoplay">
                         <amp-img src="../images/slider/slider.jpg" width="400" height="550" layout="responsive"
                               alt="a sample image">
                         </amp-img>
@@ -509,10 +1013,12 @@
                               <div class="col-12 col-md-6">
                                     <div class="mapWrapper">
 
-                                          <div class="gmap_canvas"><iframe id="gmap_canvas"
-                                                      src="https://maps.google.com/maps?q=aleja%20Ro%C5%BAdzie%C5%84skiego%2097,%2040-203%20Katowice,%20Poland&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                                      frameborder="0" scrolling="no" marginheight="0"
-                                                      marginwidth="0"></iframe>
+                                          <div class="gmap_canvas">
+                                                <amp-iframe width="200" height="200"
+                                                      sandbox="allow-scripts allow-same-origin" layout="responsive"
+                                                      frameborder="0"
+                                                      src="https://maps.google.com/maps?q=aleja%20Ro%C5%BAdzie%C5%84skiego%2097,%2040-203%20Katowice,%20Poland&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                                                </amp-iframe>
 
                                           </div>
                                     </div>

@@ -23,284 +23,120 @@ h3 {
 
 p {
   text-align: justify;
+  font-size: .9rem;
 }
 
-/*****************************Slider css*************************************/
-#sliderSection {
-  position: relative;
-}
-
-#sliderSection .sliderContent {
-  position: absolute;
-  top: 30%;
-  left: 6%;
-  width: 80%;
-  background: #ffffffde;
-  z-index: 2;
-  border-radius: .5rem;
-  padding: .4rem;
-}
-
-#sliderSection .sliderContent h3 {
-  color: black;
-  padding-top: .5rem;
-}
-
-#sliderSection .sliderContent p {
-  color: #000;
-}
-
-#sliderSection .sliderContent .sliderBtn {
-  background: orange;
-  width: 7rem;
-  padding: .3rem;
-  text-align: center;
-  border-radius: 5px;
-  height: 2.2rem;
-}
-
-#sliderSection .sliderContent .sliderBtn:hover {
-  border: 1px solid #000;
-  background: #fff;
-}
-
-/*****************************Servicee Section css*************************************/
-#ourService {
-  padding: 2rem 0rem;
-  background: #fff;
-}
-
-#ourService h2 {
-  width: 13rem;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  color: #000;
-}
-
-#ourService h2::after {
-  content: "";
-  position: absolute;
-  background: orange;
-  width: 16rem;
-  height: .3rem;
-  top: 3rem;
-  left: -1rem;
-}
-
-#ourService .col .serviceContentWrapper {
-  margin: 5px 15px 5px 10px;
-  padding: 2rem 1rem;
-  height: 105%;
-  border-radius: .5rem;
-  position: relative;
-}
-
-#ourService .col .serviceContentWrapper h3 {
-  font-weight: 700;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #000;
-}
-
-#ourService .col .serviceContentWrapper p {
-  padding-top: .3rem;
-  color: #000;
-}
-
-#ourService .col .serviceContentWrapper .btn1 {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 14px;
-  letter-spacing: 0.3px;
-  fill: #FFFFFF;
-  color: #FFFFFF;
-  background-color: #F3B007;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #F3B007;
-  border-radius: 4px 4px 4px 4px;
-  width: 7rem;
-  padding: .6rem;
-  text-align: center;
-  position: absolute;
-  bottom: 3rem;
-}
-
-#ourService .col .lastContent {
-  position: relative;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
-  margin: 19px 15px 5px 10px;
-  padding: 2rem 1rem;
-  height: 105%;
-  border-radius: .5rem;
-  background: #343434;
-}
-
-#ourService .col .lastContent .btn1 {
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 14px;
-  letter-spacing: 0.3px;
-  fill: #FFFFFF;
-  color: #FFFFFF;
-  background-color: #F3B007;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #F3B007;
-  border-radius: 4px 4px 4px 4px;
-  width: 7rem;
-  padding: .6rem;
-  text-align: center;
-  position: absolute;
-  bottom: 1rem;
-}
-
-#ourService .col .lastContent h3 {
-  color: #fff;
-  font-weight: 700;
-}
-
-#ourService .col .lastContent p {
-  color: #e9e0e0;
-}
-
-/*****************************aboutSection css*************************************/
-#aboutUs {
-  margin-top: 3rem;
-  padding: 1.5rem 0rem;
-  background: #f3f3f3;
-}
-
-#aboutUs .aboutImg {
-  margin-top: 2.5rem;
-}
-
-#aboutUs .aboutImg img {
+.styckeyNavbar {
+  position: fixed;
+  top: 0;
   width: 100%;
-  max-height: 18rem;
+  z-index: 1000000;
 }
 
-#aboutUs h2 {
-  width: 9rem;
-  text-align: center;
+/****************************************************************************/
+#gallaryPost {
+  background: #0000000d;
+  padding: 3rem 0rem;
+}
+
+#gallaryPost .styckeycityListRight {
+  right: 0rem;
+  width: 15%;
+  z-index: 1;
+  background: #fff;
+  height: 100vh;
+  border-left: 2px solid #bbb2b24f;
+}
+
+#gallaryPost .styckeycityListRight h3 {
+  margin: 2rem;
+}
+
+#gallaryPost .styckeycityListRight ul {
+  margin-top: -1rem;
+  margin-left: -1.5rem;
+}
+
+#gallaryPost .styckeycityListRight ul li {
+  list-style: none;
+}
+
+#gallaryPost .styckeycityList {
+  width: 15%;
+  z-index: 1;
+  background: #fff;
+  height: 100vh;
+  border-right: 2px solid #bbb2b24f;
+}
+
+#gallaryPost .styckeycityList h3 {
+  margin: 2rem;
+}
+
+#gallaryPost .styckeycityList ul {
+  margin-top: -1rem;
+  margin-left: -1.5rem;
+}
+
+#gallaryPost .styckeycityList ul li {
+  list-style: none;
+}
+
+#gallaryPost .gallaryContentWrapper {
+  width: 75%;
   margin: auto;
-  color: #000;
-  position: relative;
-}
-
-#aboutUs h2::after {
-  content: "";
-  position: absolute;
-  background: orange;
-  width: 11rem;
-  height: .3rem;
-  top: 3rem;
-  left: -1rem;
-}
-
-#aboutUs .aboutContentWrapper {
   padding: 2rem 0rem;
 }
 
-#aboutUs .aboutContentWrapper p {
+#gallaryPost .gallaryContentWrapper .gallaryImgWrapper img {
+  width: 100%;
+  max-height: 27rem;
+}
+
+#gallaryPost .gallaryContentWrapper h2 {
+  text-align: center;
+  color: #000;
+}
+
+#gallaryPost .gallaryContentWrapper p {
   text-align: justify;
   color: #000;
 }
 
-/*****************************offerSection css*************************************/
-#offerSection {
-  padding: 1.5rem 0rem;
-  background: #d2d0df8c;
+#gallaryPost .pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-left: -2.6rem;
 }
 
-#offerSection h2 {
-  width: 9rem;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  color: #000;
+#gallaryPost .pagination ul li {
+  list-style: none;
+  width: 6rem;
+  border: 2px solid #3933338f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0rem .2rem;
+  background: #f4da04;
+  height: 2.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-#offerSection h2::after {
-  content: "";
-  position: absolute;
-  background: orange;
-  width: 11rem;
-  height: .3rem;
-  top: 3rem;
-  left: -1rem;
+#gallaryPost .pagination ul li a {
+  display: block;
 }
 
-#offerSection .offerContentWrapper {
-  padding: 2rem 0rem;
-}
-
-#offerSection .offerContentWrapper p {
-  text-align: justify;
-  color: #000;
-}
-
-/*****************************GallarySection css*************************************/
-#gallarySection {
-  padding: 2rem 0rem;
-  background: #fff;
-}
-
-#gallarySection h2 {
-  width: 9rem;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  color: #000;
-}
-
-#gallarySection h2::after {
-  content: "";
-  position: absolute;
-  background: orange;
-  width: 11rem;
-  height: .3rem;
-  top: 2.6rem;
-  left: -1rem;
-}
-
-#gallarySection p {
-  padding: 1rem 0rem;
-  text-align: center;
-  font-size: clamp(1rem, 2.5vw, 1.5em);
-  color: #000;
-}
-
-#gallarySection .imgContentWrapper {
-  width: 97%;
-  margin: 1rem auto;
-  -webkit-box-shadow: 0px 1px 9px 2px #e3d9d9f7;
-          box-shadow: 0px 1px 9px 2px #e3d9d9f7;
-  background: #f9f9f8b5;
-}
-
-#gallarySection .imgContentWrapper .gallaryImgWrapper img {
-  width: 100%;
-}
-
-#gallarySection .imgContentWrapper .gallaryContent {
-  margin-top: .7rem;
-}
-
-#gallarySection .imgContentWrapper .gallaryContent h4 {
-  font-size: clamp(1rem, 2.5vw, 1.1rem);
-  text-align: center;
-  text-decoration: underline;
-  color: #000;
-}
-
-#gallarySection .imgContentWrapper .gallaryContent p {
-  text-align: center;
-  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
-  margin-top: -1.5rem;
-  line-height: 1.2rem;
-  color: #000;
+#gallaryPost .pagination ul li a img {
+  width: .7rem;
 }
 
 /*****************************footer css*************************************/
@@ -435,104 +271,6 @@ p {
 }
 
 /***************************Oferta CSS***************************************/
-#ofertaPost {
-  padding: 2rem .5rem;
-  clear: both;
-  background: #fff;
-}
-
-#ofertaPost .box-shaddow {
-  -webkit-box-shadow: 1px 1px 1px 1px #cfc4c4;
-          box-shadow: 1px 1px 1px 1px #cfc4c4;
-}
-
-#ofertaPost .box-shaddow .ofertaContentwrapper {
-  padding: 1.5rem 0rem;
-  background: #fff;
-}
-
-#ofertaPost .box-shaddow .ofertaContentwrapper h2 {
-  color: black;
-  font-weight: 600;
-  text-align: center;
-  padding-bottom: .8rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid red;
-}
-
-/***************************gallary CSS***************************************/
-#gallaryPost {
-  margin: 3rem 0rem;
-  background: #fff;
-}
-
-#gallaryPost .background {
-  background-color: #0404040a;
-}
-
-#gallaryPost h1 {
-  padding: 2rem 0rem;
-  text-align: center;
-}
-
-#gallaryPost .col-12 {
-  padding-bottom: 3rem;
-}
-
-#gallaryPost .gallaryImgWrapper img {
-  width: 100%;
-  max-width: 48rem;
-  display: block;
-  margin: auto;
-  max-height: 22rem;
-}
-
-#gallaryPost .gallaryContentWrapper h2 {
-  padding: 1rem 0rem;
-  text-align: center;
-  border-bottom: 3px solid #000;
-}
-
-#gallaryPost .gallaryContentWrapper p {
-  color: #000;
-}
-
-#gallaryPost .pagination ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: -2.6rem;
-}
-
-#gallaryPost .pagination ul li {
-  list-style: none;
-  width: 3rem;
-  border: 2px solid #3933338f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0rem .2rem;
-  background: #f4da04;
-  height: 2.5rem;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#gallaryPost .pagination ul li a {
-  display: block;
-}
-
-#gallaryPost .pagination ul li a img {
-  width: .7rem;
-}
-
 /***************************RESPONSIVE CSS***************************************/
 /* *************************Responsive css ****************************
 ***********************************************************************/
@@ -544,6 +282,9 @@ p {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
+  #sliderSection .sliderContent {
+    width: 88%;
+  }
   #sliderContent {
     width: 88% !important;
     margin: auto;
@@ -586,7 +327,7 @@ p {
     height: 3rem;
   }
   .sidebar li a img {
-    width: 1.5rem;
+    width: 1.3rem;
   }
   #dnone {
     display: none !important;
@@ -650,8 +391,8 @@ p {
     width: 100%;
     height: 88.2vh;
   }
-  .i-amphtml-layout-size-defined {
-    overflow: hidden !important;
+  .sliderheight {
+    overflow: hidden;
     height: 100%;
   }
   .textHeader {
@@ -667,17 +408,6 @@ p {
     width: 100%;
     background: #fff;
     position: relative;
-  }
-  .art-nav::before {
-    content: "";
-    width: 100%;
-    height: 88.2vh;
-    position: absolute;
-    top: 4.3rem;
-    left: 0rem;
-    background: #000000a6;
-    opacity: .6;
-    z-index: 2;
   }
   .art-nav .logoWrapper {
     margin-left: 4rem;
@@ -708,14 +438,14 @@ p {
   }
   .art-nav .art-nav-inner .art-hmenu li .dropDown {
     position: absolute;
-    background: orange;
-    top: 3rem;
+    background: #fdfdfd;
+    top: 3.1rem;
     left: -1rem;
-    border-top: 1px solid;
+    border-top: 1px solid orange;
     width: 17.3rem;
     z-index: 3;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
     -webkit-transform-origin: top;
             transform-origin: top;
     -webkit-transform: scaleY(0);
@@ -729,6 +459,7 @@ p {
   .art-nav .art-nav-inner .art-hmenu li .dropDown li a {
     color: #000;
     display: block;
+    font-size: .9rem;
   }
 }
 
