@@ -13,7 +13,6 @@
       <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
       <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
       <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
-      <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> -->
       <style amp-boilerplate>
             body {
                   -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -833,6 +832,45 @@
                   z-index: 1000000;
             }
 
+            /*****************************Slider css*************************************/
+            #sliderSection {
+                  position: relative;
+                  top: 4.2rem;
+            }
+
+            #sliderSection .sliderContent {
+                  position: absolute;
+                  top: 30%;
+                  left: 6%;
+                  width: 80%;
+                  background: #ffffffde;
+                  z-index: 2;
+                  border-radius: .5rem;
+                  padding: .4rem;
+            }
+
+            #sliderSection .sliderContent h3 {
+                  color: black;
+                  padding-top: .5rem;
+            }
+
+            #sliderSection .sliderContent p {
+                  color: #000;
+            }
+
+            #sliderSection .sliderContent .sliderBtn {
+                  background: orange;
+                  width: 7rem;
+                  padding: .3rem;
+                  text-align: center;
+                  border-radius: 5px;
+                  height: 2.2rem;
+            }
+
+            #sliderSection .sliderContent .sliderBtn:hover {
+                  border: 1px solid #000;
+                  background: #fff;
+            }
 
             /*****************************footer css*************************************/
             .art-footer {
@@ -965,17 +1003,40 @@
                   margin-left: 1rem;
             }
 
-            /***************************FAQ CSS***************************************/
+            /***************************Oferta CSS***************************************/
+            #ofertaPost {
+                  padding: 9rem .5rem;
+                  clear: both;
+                  background: #fff;
+            }
 
+            #ofertaPost .box-shaddow {
+                  -webkit-box-shadow: 1px 1px 1px 1px #cfc4c4;
+                  box-shadow: 1px 1px 1px 1px #cfc4c4;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper {
+                  padding: 1.5rem 0rem;
+                  background: #fff;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper h2 {
+                  color: black;
+                  font-weight: 600;
+                  text-align: center;
+                  padding-bottom: .8rem;
+                  margin-bottom: 1.5rem;
+                  border-bottom: 2px solid red;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper p {
+                  color: #000;
+            }
 
             /***************************RESPONSIVE CSS***************************************/
             /* *************************Responsive css ****************************
     ***********************************************************************/
             @media only screen and (max-width: 448px) {
-                  .faqWrapper p {
-                        font-size: .9rem;
-                  }
-
                   .art-footer .topWrapper .contactWrapper .imgDiv img {
                         display: none;
                   }
@@ -1133,7 +1194,6 @@
                         width: 100%;
                         background: #fff;
                         position: relative;
-                        border-bottom: 2px solid #0000000f;
                   }
 
 
@@ -1245,55 +1305,6 @@
             .amp-sidebar-mask {
                   z-index: 3;
             }
-
-            #faqSection {
-                  padding: 2rem 0rem;
-                  background: #1d171705;
-            }
-
-            #faqSection img {
-                  max-height: 23rem;
-                  margin: auto;
-                  margin-top: auto;
-                  display: block;
-                  margin-top: 3rem;
-                  width: 64%;
-                  border: 4px solid orange;
-            }
-
-            #faqSection h2 {
-                  padding: 2rem 0rem;
-                  font-weight: 550;
-                  text-align: center;
-
-
-            }
-
-            .pWrapper {
-                  padding-bottom: 2rem;
-                  text-align: center;
-                  font-size: .9rem;
-                  border-bottom: 2px solid #00000030;
-            }
-
-
-            .faqWrapper {
-                  padding: 1.2rem 1rem;
-
-            }
-
-            .faqWrapper h3 {
-                  text-align: left;
-                  font-weight: 700;
-            }
-
-            .faqWrapper p {
-                  text-align: start;
-                  font-size: clamp(1rem, 2vw, 1.2rem);
-                  font-weight: 400;
-                  line-height: 1.7em;
-                  color: #140e0ecf;
-            }
       </style>
 </head>
 
@@ -1305,36 +1316,36 @@
                         <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0"
                               class="close-sidebar">✕</div>
                         <ul class="sidebar">
-                              <li><a href="index.html" class="active"><img src="images/home-solid.svg" alt="">
+                              <li><a href="../index.html" class="active"><img src="../images/home-solid.svg" alt="">
                                           Strona
                                           główna</a></li>
-                              <li><a href="onas.html"><img src="images/address-card-solid.svg" alt=""> O nas</a>
+                              <li><a href="../onas.html"><img src="../images/address-card-solid.svg" alt=""> O nas</a>
                               </li>
-                              <li id="" style="position: relative;"><a href="Oferta/oferta.html"><img
+                              <li id="" style="position: relative;"><a href="oferta.html"><img
                                                 src="../images/gift-solid.svg" alt=""> Oferta
                                     </a><img id="offerImg" src="../images/sort-down-solid.svg" alt="">
                                     <ul class="dropDown1">
-                                          <li><a href="Oferta/Wyburzenia.html"><img
+                                          <li><a href="Wyburzenia.html"><img
                                                             src="../images/arrow-circle-right-solid.svg" alt="">
                                                       Wyburzenia</a></li>
-                                          <li><a href="Oferta/Wykopy.html"><img
-                                                            src="../images/arrow-circle-right-solid.svg" alt="">
+                                          <li><a href="Wykopy.html"><img src="../images/arrow-circle-right-solid.svg"
+                                                            alt="">
                                                       Wykopy</a>
                                           </li>
-                                          <li><a href="Oferta/Wywóz gruzu i wynajem.html"><img
+                                          <li><a href="Wywóz gruzu i wynajem.html"><img
                                                             src="../images/arrow-circle-right-solid.svg" alt="">
                                                       Wywóz gruzu </a></li>
-                                          <li><a href="Oferta/Wywóz i utylizacja.html"><img
+                                          <li><a href="Wywóz i utylizacja.html"><img
                                                             src="../images/arrow-circle-right-solid.svg" alt="">
                                                       odpadów budowlanych</a></li>
                                     </ul>
                               </li>
-                              <li><a href="faq.html"><img src="images/gem-solid.svg" alt=""> FAQ</a>
+                              <li><a href="../faq.html"><img src="../images/gem-solid.svg" alt=""> FAQ</a>
                               </li>
-                              <li><a href="gallary/main0gallary.html"><img src="images/image-regular.svg" alt="">
+                              <li><a href="../gallary/gallary1.html"><img src="../images/image-regular.svg" alt="">
                                           Galeria</a>
                               </li>
-                              <li><a href="#contact"><img src="images/headset-solid.svg" alt=""> Kontakt</a>
+                              <li><a href="#contact"><img src="../images/headset-solid.svg" alt=""> Kontakt</a>
                               </li>
                         </ul>
                   </amp-sidebar>
@@ -1345,243 +1356,112 @@
             <!--__________________________Desktop Navbar area_____________________________-->
             <nav id="dnone" class="art-nav" style="display: flex;">
                   <div class="logoWrapper">
-                        <img src="images/mainlogo.png" style="width: 4rem;" alt=""> <span
+                        <img src="../images/mainlogo.png" style="width: 4rem;" alt=""> <span
                               style="color: #000;">POLDIM</span>
                   </div>
                   <div class="art-nav-inner">
                         <ul class="art-hmenu " style="display: flex;">
-                              <li><a href="index.html" class="active">Strona główna</a></li>
-                              <li><a href="onas.html">O nas</a></li>
-                              <li id="dropDownHover" style="position: relative;"><a href="Oferta/oferta.html">Oferta
+                              <li><a href="../index.html" class="active">Strona główna</a></li>
+                              <li><a href="../onas.html">O nas</a></li>
+                              <li id="dropDownHover" style="position: relative;"><a href="oferta.html">Oferta
                                           <img src="../fontawesome/sort-down-solid.svg" alt=""></a>
                                     <ul class="dropDown">
-                                          <li><a href="Oferta/Wyburzenia.html">Wyburzenia</a></li>
-                                          <li><a href="Oferta/Wykopy.html">Wykopy</a></li>
-                                          <li><a href="Oferta/Wywóz gruzu i wynajem.html">Wywóz gruzu i
+                                          <li><a href="Wyburzenia.html">Wyburzenia</a></li>
+                                          <li><a href="Wykopy.html">Wykopy</a></li>
+                                          <li><a href="Wywóz gruzu i wynajem.html">Wywóz gruzu i
                                                       kontenery na
                                                       gruz</a></li>
-                                          <li><a href="Oferta/Wywóz i utylizacja.html">Wywóz i
+                                          <li><a href="Wywóz i utylizacja.html">Wywóz i
                                                       utylizacja
                                                       odpadów budowlanych</a></li>
                                     </ul>
                               </li>
-                              <li><a href="faq.html">FAQ</a></li>
-                              <li><a href="gallary/main0gallary.html">Galeria</a></li>
+                              <li><a href="../faq.html">FAQ</a></li>
+                              <li><a href="../gallary/gallary1.html">Galeria</a></li>
                               <li><a href="#contact">Kontakt</a></li>
                         </ul>
                   </div>
             </nav>
       </header>
       <!--________________________Navbar end_______________________-->
-
-      <!--__________________________FAQ fast post_____________________________-->
-
-      <section id="faqSection">
-            <div class="container">
-                  <img src="images/Gallary/gallary_15.png" alt="">
-                  <h2>Często Zadawane Pytania </h2>
-                  <p class="pWrapper">Zespół Poldim Excavation zawsze robi wszystko, aby upewnić się, że będziesz
-                        zadowolony z każdego
-                        etapu procesu. Poniżej przedstawiamy niektóre z najczęściej zadawanych pytań dotyczących naszych
-                        usług: </p>
+      <section id="sliderSection">
+            <div class="sliderWrapper">
+                  <amp-carousel class="sliderheight" width="400" height="268" layout="responsive" type="slides" autoplay
+                        delay="5000" role="region" aria-label="Carousel with autoplay">
+                        <amp-img src="../images/slider/slider.jpg" width="400" height="550" layout="responsive"
+                              alt="a sample image">
+                        </amp-img>
+                        <amp-img src="../images/slider/slider1.jpg" width="400" height="550" layout="responsive"
+                              alt="another sample image"></amp-img>
+                        <amp-img src="../images/slider/slider2.jpg" width="400" height="550" layout="responsive"
+                              alt="and another sample image"></amp-img>
+                  </amp-carousel>
+            </div>
+            <div class="sliderContent" id="sliderContent">
+                  <h1 style="text-align: center;">Wykopy</h1>
+                  <h3 style="text-align: center;">POLDIM - TEL. 880 708 520</h3>
+                  <p></p>
+                  <div class="sliderBtn" style="margin: auto;"><a href="#contact">Content Us</a></div>
+            </div>
+      </section>
+      <!--__________________________fast post_____________________________-->
+      <section id="ofertaPost">
+            <div class="container box-shaddow">
                   <div class="row">
                         <div class="col-12">
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Czy mogę samodzielnie wykonać wykop? </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Przy projektach budowlanych na dużą skalę najlepiej powierzyć to zadanie
-                                                profesjonalistom. Poldim Excavation precyzyjnie zaplanuje Twój projekt i
-                                                zakończy pracę bez narażania bezpieczeństwa. Wykonamy również wykopy na
-                                                placach budowy, nie uszkadzając przy tym okolicznych terenów.
-                                          </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Czy wykopy wiążą się z ryzykiem? </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Podstawowe linie energetyczne są jednym z głównych zagrożeń związanych z
-                                                wykopami. Jeśli właściciele nieruchomości nie zaplanują inspekcji i nie
-                                                uzyskają niezbędnych pozwoleń, mogą uderzyć w linię wodociągową,
-                                                kablową, elektryczną lub gazową. Takie wypadki mogą skutkować
-                                                tymczasowymi uszkodzeniami mediów, a nawet niebezpiecznymi wypadkami.
-                                                Jest to powód, dla którego zawsze należy pozwolić ekspertom, takim jak
-                                                Poldim Excavation, sprawdzić obecność linii energetycznych.
-                                          </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Jakie środki ostrożności podejmujesz podczas wykopalisk?</h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Nasz zespół wyraźnie zaznacza obwód każdego wykopu, który wykonujemy, aby
-                                                był widoczny w dzień iw nocy. Ponadto ściśle przestrzegamy przepisów
-                                                bezpieczeństwa i lokalnych przepisów budowlanych oraz przechodzimy
-                                                ciągłe kształcenie i szkolenia, aby zapewnić zgodność przez cały czas.
-                                          </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Co się stanie, jeśli napotkasz problemy z moją fundacją?</h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>
-                                                Wykopaliska w Poldim zazwyczaj przewidują problemy na długo przed ich
-                                                wykryciem. Jednak nie zawsze może to być prawdą, jeśli chodzi o twoją
-                                                fundację. Jeśli dowiemy się, że struktura Twojej fundacji jest w taki
-                                                czy inny sposób naruszona, skontaktujemy się z Tobą, właścicielem
-                                                nieruchomości, aby od razu porozmawiać o najlepszym rozwiązaniu.
-                                          </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>
-                                                Translation results
-                                                Co się stanie, jeśli będzie padało lub pogoda się pogorszy podczas
-                                                kopania?</h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Przewidzenie pogody może być bardzo trudne, ale nie oznacza to, że projekt
-                                                przesunie się z ustalonym harmonogramem. Mamy znakomity zespół do
-                                                zarządzania obiektem, który wzywa do przerwania i wznowienia pracy, gdy
-                                                warunki się poprawią i zapewnią bezpieczeństwo. Zawalenia się i
-                                                przypadkowe poślizgnięcie się obciążonych ciężarówek może się zdarzyć,
-                                                jeśli ciężki sprzęt jest obsługiwany w deszczu. Aby chronić Twoją
-                                                własność i Twoją inwestycję przez cały czas, przestaniemy działać tylko
-                                                w razie potrzeby i rozpoczniemy natychmiast, gdy warunki się poprawią.
-                                          </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Czym są wykopaliska?</h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p> Wykopy to metoda przemieszczania maszyn lub materiałów wybuchowych
-                                                z gleby, skał lub innych materiałów przy użyciu różnych narzędzi.
-                                                Obejmuje to
-                                                roboty ziemne, frezy, szyby ścienne i drążenie tuneli. Wykopaliska
-                                                wymagają
-                                                odkrycia, odnowienia, wydobycia i opracowania wielu podstawowych
-                                                zastosowań.
-                                                Budynek jest jednym z najczęstszych zastosowań wykopu. Wykopy służą do
-                                                wykonywania ram budowlanych, stawów i dróg w osiedlu.
-
-                                                Wykopy, wiercenia, pogłębianie i budowa terenu to tylko niektóre z
-                                                różnych
-                                                metod stosowanych w górnictwie. Aby każda procedura była skuteczna,
-                                                wymagane
-                                                są specjalistyczne metody, sprzęt i maszyny. Stosowane procesy zależą od
-                                                struktury wynikającej z procesu budowlanego.</p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3> Co należy zrobić przed wykopaliskami? </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p> Miejsce musi zostać dokładnie zbadane, aby upewnić się, że środowisko
-                                                naturalne i otaczające go artefakty pozostaną przez cały proces
-                                                wykopalisk, zanim będą mogły się rozpocząć wykopaliska. Następnie
-                                                sporządzane są mapy w skali i głębokości terenu oraz szkice wykonywane
-                                                przez wykonawców budowy w celu dokładnego określenia granic terenu.
-                                                Proces budowy będzie kontynuowany po zakończeniu tych dwóch kluczowych
-                                                etapów.
-
-                                                Szybkie ukończenie i opłacalność to kluczowe aspekty projektu
-                                                wykopaliskowego, ale jest jeszcze jeden czynnik, który może być znacznie
-                                                bardziej krytyczny niż te dwa poprzednie i którym jest zdrowie. Nie ma
-                                                wątpliwości. Aby uniknąć incydentów, takich jak wykopywanie podziemnych
-                                                dróg serwisowych, o których nie wiesz, i niszczenie innych materiałów, w
-                                                tym drzew, musisz przestrzegać ścisłych protokołów konserwacji, aby
-                                                zapewnić przestrzeganie najlepszych metod identyfikacji przewodu
-                                                podziemnego.</p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Zbadaj ziemię </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Zanim pęknie grunt Najlepiej, jeśli chcesz zbadać róg
-                                                pola, więc musisz zrobić właściwe kroki, zanim jeszcze się zepsujesz
-                                                grunt. Oba problemy związane z podnoszeniem i ponownym poziomowaniem
-                                                powinny,
-                                                dlatego należy je usunąć. Musisz kopać dwa razy ostatnią rzecz, jaką
-                                                chcesz!
-                                          </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Zrozum rodzaj gleby </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Najlepsza strategia dla gleby miękkiej nie jest najlepszą strategią dla
-                                                gleby szorstkiej, dlatego konieczne jest zrozumienie rodzaju gleby –
-                                                najbardziej odpowiednią metodę kopania i ocenę ochrony należy obliczyć
-                                                na podstawie rodzaju gleby, którą należy wykopać. </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Wykop linię pompy przed kopaniem </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Woda gruntowa może stanowić poważny problem, jeśli będziesz wykopywać, a
-                                                Twój budynek zacznie zalewać. Może to prawie utrudnić budowę bazy.
-                                                Dlatego potrzebujesz linii pomp do usuwania wód gruntowych z terenu
-                                                wykopalisk w pobliżu wykopalisk. Kieruje wodę, aby zapobiec znacznym
-                                                powodziom. </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Lokalizowanie podziemnych mediów </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Najskuteczniejszym sposobem na to jest wynajęcie firmy, która może
-                                                zlokalizować wszystkie kable i rurociągi biegnące pod ziemią za pomocą
-                                                specjalnego sprzętu, jest znalezienie usług podziemnych, zarówno
-                                                używanych, jak i nieużywanych, przed rozpoczęciem budowy. Numer 811 to
-                                                najlepszy sposób na zrobienie tego w Poland </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Podejmij środki ostrożności </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Chcesz podjąć dodatkowe środki bezpieczeństwa podczas kopania. Obejmuje to
-                                                głowę, oczy i skórę do zakrycia. Ponadto chcesz dowiedzieć się o
-                                                głównych liniach energetycznych, zwłaszcza gazowych. Ostatecznie praca
-                                                musi być wykonana prawidłowo przy użyciu ciężkiego sprzętu, a eksperci
-                                                zawsze będą wzywani. </p>
-                                    </div>
-                              </div>
-                              <div class="faqWrapper">
-                                    <div class="faq">
-                                          <h3>Zadzwoń pod numer 811, zanim zaczniesz kopać! </h3>
-                                    </div>
-                                    <div class="ans">
-                                          <p>Ta usługa telefoniczna jest bezpośrednio połączona z zakładami użyteczności
-                                                publicznej, które mogą pomóc w ustaleniu, gdzie działają zakłady metra
-                                                oraz jak je oznaczać i zapobiegać. Następnie możesz kontynuować
-                                                wykopaliska, nie myśląc o dotarciu do jakichkolwiek linii energetycznych
-                                                i ich zniszczeniu. Korzystanie z podziemnych obiektów w Poldim sprzyja
-                                                zdrowiu. </p>
-                                    </div>
+                              <div class="imgWrapper"><img style="display: block;width: 100%;max-height: 32rem;"
+                                          src="ofertaImg/Wykopy.gif" alt=""></div>
+                              <div id="post3" class="ofertaContentwrapper">
+                                    <h2>Wykopy</h2>
+                                    <p>W wachlarzu usług naszej firmy znajdą Państwo także możliwość zamawiania
+                                          wykopów.
+                                          Każdy wie, że wykopy fundamentów, rowów melioracyjnych, dołów pod
+                                          kanalizację i
+                                          szamba to podstawa funkcjonowania całej planety. Wkopywanie sprzętów lub
+                                          betonowych instalacji w ziemię stwarza solidne fundamenty pod obiekt,
+                                          wydłużając
+                                          żywotność całego budynku i podnosząc bezpieczeństwo. Należy jednak
+                                          pamiętać, że
+                                          aby uzyskać taki efekt, wykopy muszą zostać przeprowadzone
+                                          profesjonalnie, bez
+                                          żadnych odstępstw lub kompromisów.<br><br>Taką polityką pracy cechuje
+                                          się nasza
+                                          firma. Jesteśmy profesjonalistami, którzy oferują usługi wykopów na
+                                          terenie
+                                          Śląska. Dysponujemy koparkami i sprzętem do mierzenia głębokości wykopów
+                                          -
+                                          zatrudniamy profesjonalistów, którzy doskonale wiedzą, jak wykopy
+                                          powinny być
+                                          przeprowadzane. Z naszych usług korzystają zarówno firmy budowlane,
+                                          które
+                                          potrzebują wykopów na placach budowy, jak i prywatni klienci, którzy na
+                                          swoich
+                                          posesjach również potrzebują solidnego wykopu w ziemi. Zajmiemy się
+                                          wszystkim -
+                                          wykopiemy dół na określoną głębokość, zajmiemy się wykopami fundamentów
+                                          lub
+                                          tworzeniem rowów melioracyjnych - z nami wykopy staną się proste i
+                                          tanie.
+                                          <br><br>Zapraszamy do współpracy z naszą firmą. Doskonale wiemy, jak
+                                          odnaleźć
+                                          się w świecie wykopów i jak pomóc firmom budowlanym i prywatnym
+                                          klientom.
+                                          Zapewniamy, że każda usługa, jakiej się podejmiemy będzie na najwyższym
+                                          poziomie
+                                          a efekt przerośnie Państwa najśmielsze oczekiwania. Prócz samych
+                                          wykopów,
+                                          oferujemy także usługi wyburzania i najmu kontenerów. Profesjonalny
+                                          transport
+                                          maszyn i kontenerów, a to wszystko w niskiej cenie. Jesteśmy jedną firmą
+                                          na
+                                          Śląsku, która łączy te wszystkie cechy!<br></p>
                               </div>
                         </div>
+
                   </div>
             </div>
       </section>
+
       <!--__________________________Footer area_____________________________-->
 
       <footer id="contact" class="art-footer">
@@ -1591,7 +1471,7 @@
                         <div class="row">
                               <div class="col-12 col-md-6">
                                     <div class="contactWrapper">
-                                          <div class="imgDiv"><img src="images/map-marker-alt-solid.svg" alt="">
+                                          <div class="imgDiv"><img src="../images/map-marker-alt-solid.svg" alt="">
                                           </div>
                                           <h3>Address</h3>
                                           <ul>
@@ -1630,7 +1510,7 @@
                   <div class="container">
                         <div class="tabTop">
                               <a href="#dnone">
-                                    <img src="images/sort-alpha-up-solid.svg" style="width: 2rem;" alt=""> </a>
+                                    <img src="../images/sort-alpha-up-solid.svg" style="width: 2rem;" alt=""> </a>
                         </div>
                         <p>Copyright &copy; 2015 - POLDIM - WYBURZENIA I WYKOPY. All Rights Reserved.</p>
                         <p><a href="http://www.interprom.pl" title="strony www" target="_blank">Strony www</a> & <a
@@ -1638,9 +1518,9 @@
                                     target="_blank">pozycjonowanie</a> & <a href="http://www.interprom.pl"
                                     title="linki sponsorowane" target="_blank">linki sponsorowane</a>
                               Interprom.pl.
-                              <p><a href="polityka-cookies.html">Polityka cookies</a> | <a
-                                          href="polityka-prywatnosci.html">Polityka prywatności</a> | <a
-                                          href="sitemap.xml">Mapa
+                              <p><a href="./polityka-cookies.html">Polityka cookies</a> | <a
+                                          href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a
+                                          href="./sitemap.xml">Mapa
                                           strony</a></p>
                         </p>
                         <div class="company">

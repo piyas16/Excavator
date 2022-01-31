@@ -81,649 +81,9 @@
             </style>
       </noscript>
       <style amp-custom>
-            *,
-            ::after,
-            ::before {
-                  box-sizing: border-box
-            }
-
-            article,
-            aside,
-            figcaption,
-            figure,
-            footer,
-            header,
-            hgroup,
-            main,
-            nav,
-            section {
-                  display: block
-            }
-
-            body {
-                  margin: 0;
-                  font-family: "Roboto Condensed", sans-serif;
-                  font-weight: 400;
-                  line-height: 1.5;
-                  text-align: left;
-                  font-size: 1rem
-            }
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                  margin-top: 0;
-                  margin-bottom: .5rem
-            }
-
-            p {
-                  margin-top: 0;
-                  margin-bottom: 1rem
-            }
-
-            ul {
-                  margin-top: 0;
-                  margin-bottom: 1rem
-            }
-
-            ul {
-                  margin-bottom: 0
-            }
-
-            a:hover {
-                  text-decoration: underline
-            }
-
-            img {
-                  vertical-align: middle;
-                  border-style: none
-            }
-
-            svg {
-                  overflow: hidden;
-                  vertical-align: middle
-            }
-
-            .h1,
-            .h2,
-            .h3,
-            .h4,
-            .h5,
-            .h6,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                  margin-bottom: .5rem;
-                  font-weight: 400;
-                  line-height: 1.2
-            }
-
-            .h1,
-            h1 {
-                  font-size: 2.5rem
-            }
-
-            @media (max-width:1200px) {
-
-                  .h1,
-                  h1 {
-                        font-size: calc(1.375rem + 1.5vw)
-                  }
-            }
-
-            .h2,
-            h2 {
-                  font-size: 2rem
-            }
-
-            @media (max-width:1200px) {
-
-                  .h2,
-                  h2 {
-                        font-size: calc(1.325rem + .9vw)
-                  }
-            }
-
-            .h3,
-            h3 {
-                  font-size: 1.25rem
-            }
-
-            .h4,
-            h4 {
-                  font-size: 1.15rem
-            }
-
-            .h5,
-            h5 {
-                  font-size: 1rem
-            }
-
-            .h6,
-            h6 {
-                  font-size: 1rem
-            }
-
-            amp-img,
-            img {
-                  border: 0
-            }
-
-            amp-img[class^=-amp],
-            amp-img[class^=i-amp] {
-                  height: auto;
-                  max-width: 100%
-            }
-
-            .container {
-                  width: 100%;
-                  padding-right: 15px;
-                  padding-left: 15px;
-                  margin-right: auto;
-                  margin-left: auto
-            }
-
-            @media (min-width:576px) {
-                  .container {
-                        max-width: 540px
-                  }
-            }
-
-            @media (min-width:768px) {
-                  .container {
-                        max-width: 720px
-                  }
-            }
-
-            @media (min-width:992px) {
-                  .container {
-                        max-width: 960px
-                  }
-            }
-
-            @media (min-width:1200px) {
-                  .container {
-                        max-width: 1140px
-                  }
-            }
-
-            .container-fluid,
-            .container-lg,
-            .container-md,
-            .container-sm,
-            .container-xl {
-                  width: 100%;
-                  padding-right: 15px;
-                  padding-left: 15px;
-                  margin-right: auto;
-                  margin-left: auto
-            }
-
-            @media (min-width:576px) {
-
-                  .container,
-                  .container-sm {
-                        max-width: 540px
-                  }
-            }
-
-            @media (min-width:768px) {
-
-                  .container,
-                  .container-md,
-                  .container-sm {
-                        max-width: 720px
-                  }
-            }
-
-            @media (min-width:992px) {
-
-                  .container,
-                  .container-lg,
-                  .container-md,
-                  .container-sm {
-                        max-width: 960px
-                  }
-            }
-
-            @media (min-width:1200px) {
-
-                  .container,
-                  .container-lg,
-                  .container-md,
-                  .container-sm,
-                  .container-xl {
-                        max-width: 1140px
-                  }
-            }
-
-            .row {
-                  display: flex;
-                  flex-wrap: wrap;
-                  margin-right: -15px;
-                  margin-left: -15px
-            }
-
-            .col,
-            .col-1,
-            .col-10,
-            .col-11,
-            .col-12,
-            .col-2,
-            .col-3,
-            .col-4,
-            .col-5,
-            .col-6,
-            .col-7,
-            .col-8,
-            .col-9,
-            .col-auto,
-            .col-lg,
-            .col-lg-1,
-            .col-lg-10,
-            .col-lg-11,
-            .col-lg-12,
-            .col-lg-2,
-            .col-lg-3,
-            .col-lg-4,
-            .col-lg-5,
-            .col-lg-6,
-            .col-lg-7,
-            .col-lg-8,
-            .col-lg-9,
-            .col-lg-auto,
-            .col-md,
-            .col-md-1,
-            .col-md-10,
-            .col-md-11,
-            .col-md-12,
-            .col-md-2,
-            .col-md-3,
-            .col-md-4,
-            .col-md-5,
-            .col-md-6,
-            .col-md-7,
-            .col-md-8,
-            .col-md-9,
-            .col-md-auto,
-            .col-sm,
-            .col-sm-1,
-            .col-sm-10,
-            .col-sm-11,
-            .col-sm-12,
-            .col-sm-2,
-            .col-sm-3,
-            .col-sm-4,
-            .col-sm-5,
-            .col-sm-6,
-            .col-sm-7,
-            .col-sm-8,
-            .col-sm-9,
-            .col-sm-auto,
-            .col-xl,
-            .col-xl-1,
-            .col-xl-10,
-            .col-xl-11,
-            .col-xl-12,
-            .col-xl-2,
-            .col-xl-3,
-            .col-xl-4,
-            .col-xl-5,
-            .col-xl-6,
-            .col-xl-7,
-            .col-xl-8,
-            .col-xl-9,
-            .col-xl-auto {
-                  position: relative;
-                  width: 100%;
-                  padding-right: 15px;
-                  padding-left: 15px
-            }
-
-            .col {
-                  flex-basis: 0;
-                  flex-grow: 1;
-                  max-width: 100%
-            }
-
-            .col-1 {
-                  flex: 0 0 8.33333%;
-                  max-width: 8.33333%
-            }
-
-            .col-2 {
-                  flex: 0 0 16.66667%;
-                  max-width: 16.66667%
-            }
-
-            .col-3 {
-                  flex: 0 0 25%;
-                  max-width: 25%
-            }
-
-            .col-4 {
-                  flex: 0 0 33.33333%;
-                  max-width: 33.33333%
-            }
-
-            .col-5 {
-                  flex: 0 0 41.66667%;
-                  max-width: 41.66667%
-            }
-
-            .col-6 {
-                  flex: 0 0 50%;
-                  max-width: 50%
-            }
-
-            .col-7 {
-                  flex: 0 0 58.33333%;
-                  max-width: 58.33333%
-            }
-
-            .col-8 {
-                  flex: 0 0 66.66667%;
-                  max-width: 66.66667%
-            }
-
-            .col-9 {
-                  flex: 0 0 75%;
-                  max-width: 75%
-            }
-
-            .col-10 {
-                  flex: 0 0 83.33333%;
-                  max-width: 83.33333%
-            }
-
-            .col-11 {
-                  flex: 0 0 91.66667%;
-                  max-width: 91.66667%
-            }
-
-            .col-12 {
-                  flex: 0 0 100%;
-                  max-width: 100%
-            }
-
-            @media (min-width:576px) {
-                  .col-sm {
-                        flex-basis: 0;
-                        flex-grow: 1;
-                        max-width: 100%
-                  }
-
-                  .col-sm-1 {
-                        flex: 0 0 8.33333%;
-                        max-width: 8.33333%
-                  }
-
-                  .col-sm-2 {
-                        flex: 0 0 16.66667%;
-                        max-width: 16.66667%
-                  }
-
-                  .col-sm-3 {
-                        flex: 0 0 25%;
-                        max-width: 25%
-                  }
-
-                  .col-sm-4 {
-                        flex: 0 0 33.33333%;
-                        max-width: 33.33333%
-                  }
-
-                  .col-sm-5 {
-                        flex: 0 0 41.66667%;
-                        max-width: 41.66667%
-                  }
-
-                  .col-sm-6 {
-                        flex: 0 0 50%;
-                        max-width: 50%
-                  }
-
-                  .col-sm-7 {
-                        flex: 0 0 58.33333%;
-                        max-width: 58.33333%
-                  }
-
-                  .col-sm-8 {
-                        flex: 0 0 66.66667%;
-                        max-width: 66.66667%
-                  }
-
-                  .col-sm-9 {
-                        flex: 0 0 75%;
-                        max-width: 75%
-                  }
-
-                  .col-sm-10 {
-                        flex: 0 0 83.33333%;
-                        max-width: 83.33333%
-                  }
-
-                  .col-sm-11 {
-                        flex: 0 0 91.66667%;
-                        max-width: 91.66667%
-                  }
-
-                  .col-sm-12 {
-                        flex: 0 0 100%;
-                        max-width: 100%
-                  }
-            }
-
-            @media (min-width:768px) {
-                  .col-md {
-                        flex-basis: 0;
-                        flex-grow: 1;
-                        max-width: 100%
-                  }
-
-                  .col-md-1 {
-                        flex: 0 0 8.33333%;
-                        max-width: 8.33333%
-                  }
-
-                  .col-md-2 {
-                        flex: 0 0 16.66667%;
-                        max-width: 16.66667%
-                  }
-
-                  .col-md-3 {
-                        flex: 0 0 25%;
-                        max-width: 25%
-                  }
-
-                  .col-md-4 {
-                        flex: 0 0 33.33333%;
-                        max-width: 33.33333%
-                  }
-
-                  .col-md-5 {
-                        flex: 0 0 41.66667%;
-                        max-width: 41.66667%
-                  }
-
-                  .col-md-6 {
-                        flex: 0 0 50%;
-                        max-width: 50%
-                  }
-
-                  .col-md-7 {
-                        flex: 0 0 58.33333%;
-                        max-width: 58.33333%
-                  }
-
-                  .col-md-8 {
-                        flex: 0 0 66.66667%;
-                        max-width: 66.66667%
-                  }
-
-                  .col-md-9 {
-                        flex: 0 0 75%;
-                        max-width: 75%
-                  }
-
-                  .col-md-10 {
-                        flex: 0 0 83.33333%;
-                        max-width: 83.33333%
-                  }
-
-                  .col-md-11 {
-                        flex: 0 0 91.66667%;
-                        max-width: 91.66667%
-                  }
-
-                  .col-md-12 {
-                        flex: 0 0 100%;
-                        max-width: 100%
-                  }
-            }
-
-            @media (min-width:992px) {
-                  .col-lg {
-                        flex-basis: 0;
-                        flex-grow: 1;
-                        max-width: 100%
-                  }
-
-                  .col-lg-1 {
-                        flex: 0 0 8.33333%;
-                        max-width: 8.33333%
-                  }
-
-                  .col-lg-2 {
-                        flex: 0 0 16.66667%;
-                        max-width: 16.66667%
-                  }
-
-                  .col-lg-3 {
-                        flex: 0 0 25%;
-                        max-width: 25%
-                  }
-
-                  .col-lg-4 {
-                        flex: 0 0 33.33333%;
-                        max-width: 33.33333%
-                  }
-
-                  .col-lg-5 {
-                        flex: 0 0 41.66667%;
-                        max-width: 41.66667%
-                  }
-
-                  .col-lg-6 {
-                        flex: 0 0 50%;
-                        max-width: 50%
-                  }
-
-                  .col-lg-7 {
-                        flex: 0 0 58.33333%;
-                        max-width: 58.33333%
-                  }
-
-                  .col-lg-8 {
-                        flex: 0 0 66.66667%;
-                        max-width: 66.66667%
-                  }
-
-                  .col-lg-9 {
-                        flex: 0 0 75%;
-                        max-width: 75%
-                  }
-
-                  .col-lg-10 {
-                        flex: 0 0 83.33333%;
-                        max-width: 83.33333%
-                  }
-
-                  .col-lg-11 {
-                        flex: 0 0 91.66667%;
-                        max-width: 91.66667%
-                  }
-
-                  .col-lg-12 {
-                        flex: 0 0 100%;
-                        max-width: 100%
-                  }
-            }
-
-            @media (min-width:1200px) {
-                  .col-xl {
-                        flex-basis: 0;
-                        flex-grow: 1;
-                        max-width: 100%
-                  }
-
-                  .col-xl-1 {
-                        flex: 0 0 8.33333%;
-                        max-width: 8.33333%
-                  }
-
-                  .col-xl-2 {
-                        flex: 0 0 16.66667%;
-                        max-width: 16.66667%
-                  }
-
-                  .col-xl-3 {
-                        flex: 0 0 25%;
-                        max-width: 25%
-                  }
-
-                  .col-xl-4 {
-                        flex: 0 0 33.33333%;
-                        max-width: 33.33333%
-                  }
-
-                  .col-xl-5 {
-                        flex: 0 0 41.66667%;
-                        max-width: 41.66667%
-                  }
-
-                  .col-xl-6 {
-                        flex: 0 0 50%;
-                        max-width: 50%
-                  }
-
-                  .col-xl-7 {
-                        flex: 0 0 58.33333%;
-                        max-width: 58.33333%
-                  }
-
-                  .col-xl-8 {
-                        flex: 0 0 66.66667%;
-                        max-width: 66.66667%
-                  }
-
-                  .col-xl-9 {
-                        flex: 0 0 75%;
-                        max-width: 75%
-                  }
-
-                  .col-xl-10 {
-                        flex: 0 0 83.33333%;
-                        max-width: 83.33333%
-                  }
-
-                  .col-xl-11 {
-                        flex: 0 0 91.66667%;
-                        max-width: 91.66667%
-                  }
-
-                  .col-xl-12 {
-                        flex: 0 0 100%;
-                        max-width: 100%
-                  }
-            }
-
+            /****************amp bootstrap css**********************/
+*,::after,::before{box-sizing:border-box}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:"Roboto Condensed",sans-serif;font-weight:400;line-height:1.5;text-align:left;font-size:1rem}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-top:0;margin-bottom:1rem}ul{margin-bottom:0}a:hover{text-decoration:underline}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-weight:400;line-height:1.2}.h1,h1{font-size:2.5rem}@media (max-width:1200px){.h1,h1{font-size:calc(1.375rem + 1.5vw)}}.h2,h2{font-size:2rem}@media (max-width:1200px){.h2,h2{font-size:calc(1.325rem + .9vw)}}.h3,h3{font-size:1.25rem}.h4,h4{font-size:1.15rem}.h5,h5{font-size:1rem}.h6,h6{font-size:1rem}amp-img,img{border:0}amp-img[class^=-amp],amp-img[class^=i-amp]{height:auto;max-width:100%}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid,.container-lg,.container-md,.container-sm,.container-xl{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}}@media (min-width:768px){.container,.container-md,.container-sm{max-width:720px}}@media (min-width:992px){.container,.container-lg,.container-md,.container-sm{max-width:960px}}@media (min-width:1200px){.container,.container-lg,.container-md,.container-sm,.container-xl{max-width:1140px}}.row{display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-1,.col-10,.col-11,.col-12,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-auto,.col-lg,.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-auto,.col-md,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-auto,.col-sm,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-auto,.col-xl,.col-xl-1,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-auto{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{flex-basis:0;flex-grow:1;max-width:100%}.col-1{flex:0 0 8.33333%;max-width:8.33333%}.col-2{flex:0 0 16.66667%;max-width:16.66667%}.col-3{flex:0 0 25%;max-width:25%}.col-4{flex:0 0 33.33333%;max-width:33.33333%}.col-5{flex:0 0 41.66667%;max-width:41.66667%}.col-6{flex:0 0 50%;max-width:50%}.col-7{flex:0 0 58.33333%;max-width:58.33333%}.col-8{flex:0 0 66.66667%;max-width:66.66667%}.col-9{flex:0 0 75%;max-width:75%}.col-10{flex:0 0 83.33333%;max-width:83.33333%}.col-11{flex:0 0 91.66667%;max-width:91.66667%}.col-12{flex:0 0 100%;max-width:100%}@media (min-width:576px){.col-sm{flex-basis:0;flex-grow:1;max-width:100%}.col-sm-1{flex:0 0 8.33333%;max-width:8.33333%}.col-sm-2{flex:0 0 16.66667%;max-width:16.66667%}.col-sm-3{flex:0 0 25%;max-width:25%}.col-sm-4{flex:0 0 33.33333%;max-width:33.33333%}.col-sm-5{flex:0 0 41.66667%;max-width:41.66667%}.col-sm-6{flex:0 0 50%;max-width:50%}.col-sm-7{flex:0 0 58.33333%;max-width:58.33333%}.col-sm-8{flex:0 0 66.66667%;max-width:66.66667%}.col-sm-9{flex:0 0 75%;max-width:75%}.col-sm-10{flex:0 0 83.33333%;max-width:83.33333%}.col-sm-11{flex:0 0 91.66667%;max-width:91.66667%}.col-sm-12{flex:0 0 100%;max-width:100%}}@media (min-width:768px){.col-md{flex-basis:0;flex-grow:1;max-width:100%}.col-md-1{flex:0 0 8.33333%;max-width:8.33333%}.col-md-2{flex:0 0 16.66667%;max-width:16.66667%}.col-md-3{flex:0 0 25%;max-width:25%}.col-md-4{flex:0 0 33.33333%;max-width:33.33333%}.col-md-5{flex:0 0 41.66667%;max-width:41.66667%}.col-md-6{flex:0 0 50%;max-width:50%}.col-md-7{flex:0 0 58.33333%;max-width:58.33333%}.col-md-8{flex:0 0 66.66667%;max-width:66.66667%}.col-md-9{flex:0 0 75%;max-width:75%}.col-md-10{flex:0 0 83.33333%;max-width:83.33333%}.col-md-11{flex:0 0 91.66667%;max-width:91.66667%}.col-md-12{flex:0 0 100%;max-width:100%}}@media (min-width:992px){.col-lg{flex-basis:0;flex-grow:1;max-width:100%}.col-lg-1{flex:0 0 8.33333%;max-width:8.33333%}.col-lg-2{flex:0 0 16.66667%;max-width:16.66667%}.col-lg-3{flex:0 0 25%;max-width:25%}.col-lg-4{flex:0 0 33.33333%;max-width:33.33333%}.col-lg-5{flex:0 0 41.66667%;max-width:41.66667%}.col-lg-6{flex:0 0 50%;max-width:50%}.col-lg-7{flex:0 0 58.33333%;max-width:58.33333%}.col-lg-8{flex:0 0 66.66667%;max-width:66.66667%}.col-lg-9{flex:0 0 75%;max-width:75%}.col-lg-10{flex:0 0 83.33333%;max-width:83.33333%}.col-lg-11{flex:0 0 91.66667%;max-width:91.66667%}.col-lg-12{flex:0 0 100%;max-width:100%}}@media (min-width:1200px){.col-xl{flex-basis:0;flex-grow:1;max-width:100%}.col-xl-1{flex:0 0 8.33333%;max-width:8.33333%}.col-xl-2{flex:0 0 16.66667%;max-width:16.66667%}.col-xl-3{flex:0 0 25%;max-width:25%}.col-xl-4{flex:0 0 33.33333%;max-width:33.33333%}.col-xl-5{flex:0 0 41.66667%;max-width:41.66667%}.col-xl-6{flex:0 0 50%;max-width:50%}.col-xl-7{flex:0 0 58.33333%;max-width:58.33333%}.col-xl-8{flex:0 0 66.66667%;max-width:66.66667%}.col-xl-9{flex:0 0 75%;max-width:75%}.col-xl-10{flex:0 0 83.33333%;max-width:83.33333%}.col-xl-11{flex:0 0 91.66667%;max-width:91.66667%}.col-xl-12{flex:0 0 100%;max-width:100%}}
+            /*******************bootstrap css end******************/
             .hamburger {
                   padding: .8rem .8rem;
                   font-size: 2rem;
@@ -794,7 +154,7 @@
                   width: 100%;
             }
 
-            /**************************CUSTOM CSS**********************/
+            /*******************CUSTOM CSS**********************/
             body {
                   padding: 0%;
                   margin: 0%;
@@ -822,7 +182,6 @@
                   text-align: justify;
                   font-size: .9rem;
             }
-
             .styckeyNavbar {
                   position: fixed;
                   top: 0;
@@ -870,35 +229,6 @@
                   background: #fff;
             }
 
-            /*****************************onas css*************************************/
-            #onas {
-                  padding: 8rem 0rem;
-                  background: #fff;
-            }
-
-            #onas h1 {
-                  width: 60%;
-                  margin: auto;
-                  text-align: center;
-                  margin: auto;
-                  position: relative;
-                  color: #000;
-            }
-
-            #onas h1::after {
-                  content: "";
-                  position: absolute;
-                  top: 3rem;
-                  left: 0rem;
-                  width: 100%;
-                  background: orange;
-                  height: .3rem;
-            }
-
-            .onasContentWrapper {
-                  padding: 2rem 0rem;
-            }
-
             /*****************************footer css*************************************/
             .art-footer {
                   background: #dfdddd;
@@ -926,7 +256,7 @@
             }
 
             .art-footer .topWrapper {
-                  background-image: url("images/slider/footer.jpg");
+                  background-image: url("../images/slider/footer.jpg");
                   background-position: center;
                   background-repeat: no-repeat;
                   background-size: cover;
@@ -1030,6 +360,36 @@
                   margin-left: 1rem;
             }
 
+            /***************************Oferta CSS***************************************/
+            #ofertaPost {
+                  padding: 9rem .5rem;
+                  clear: both;
+                  background: #fff;
+            }
+
+            #ofertaPost .box-shaddow {
+                  -webkit-box-shadow: 1px 1px 1px 1px #cfc4c4;
+                  box-shadow: 1px 1px 1px 1px #cfc4c4;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper {
+                  padding: 1.5rem 0rem;
+                  background: #fff;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper h2 {
+                  color: black;
+                  font-weight: 600;
+                  text-align: center;
+                  padding-bottom: .8rem;
+                  margin-bottom: 1.5rem;
+                  border-bottom: 2px solid red;
+            }
+
+            #ofertaPost .box-shaddow .ofertaContentwrapper p {
+                  color: #000;
+            }
+
             /***************************RESPONSIVE CSS***************************************/
             /* *************************Responsive css ****************************
     ***********************************************************************/
@@ -1044,7 +404,6 @@
                   #sliderSection .sliderContent {
                         width: 88%;
                   }
-
                   #sliderContent {
                         width: 88%;
                         margin: auto;
@@ -1193,6 +552,7 @@
                         position: relative;
                   }
 
+
                   .art-nav .logoWrapper {
                         margin-left: 4rem;
                   }
@@ -1296,11 +656,9 @@
                   .art-footer .topWrapper .contactWrapper .imgDiv img {
                         display: none;
                   }
-            }
+            }         
+            .amp-sidebar-mask{z-index: 3;}
 
-            .amp-sidebar-mask {
-                  z-index: 3;
-            }
       </style>
 </head>
 
@@ -1312,67 +670,64 @@
                         <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0"
                               class="close-sidebar">✕</div>
                         <ul class="sidebar">
-                              <li><a href="index.html" class="active"><img src="images/home-solid.svg" alt="">
+                              <li><a href="../index.html" class="active"><img src="../images/home-solid.svg" alt="">
                                           Strona
                                           główna</a></li>
-                              <li><a href="onas.html"><img src="images/address-card-solid.svg" alt=""> O nas</a>
+                              <li><a href="../onas.html"><img src="../images/address-card-solid.svg" alt=""> O nas</a>
                               </li>
-                              <li id="" style="position: relative;"><a href="Oferta/oferta.html"><img
-                                                src="../images/gift-solid.svg" alt=""> Oferta
-                                    </a><img id="offerImg" src="../images/sort-down-solid.svg" alt="">
-                                    <ul class="dropDown1">
-                                          <li><a href="Oferta/Wyburzenia.html"><img
-                                                            src="../images/arrow-circle-right-solid.svg" alt="">
-                                                      Wyburzenia</a></li>
-                                          <li><a href="Oferta/Wykopy.html"><img src="../images/arrow-circle-right-solid.svg"
-                                                            alt="">
-                                                      Wykopy</a>
-                                          </li>
-                                          <li><a href="Oferta/Wywóz gruzu i wynajem.html"><img
-                                                            src="../images/arrow-circle-right-solid.svg" alt="">
-                                                      Wywóz gruzu </a></li>
-                                          <li><a href="Oferta/Wywóz i utylizacja.html"><img
-                                                            src="../images/arrow-circle-right-solid.svg" alt="">
-                                                      odpadów budowlanych</a></li>
-                                    </ul>
+                              <li id="" style="position: relative;"><a href="oferta.html"><img src="../images/gift-solid.svg"
+                                    alt=""> Oferta
+                        </a><img id="offerImg" src="../images/sort-down-solid.svg" alt="">
+                        <ul class="dropDown1">
+                              <li><a href="Wyburzenia.html"><img src="../images/arrow-circle-right-solid.svg" alt="">
+                                          Wyburzenia</a></li>
+                              <li><a href="Wykopy.html"><img src="../images/arrow-circle-right-solid.svg" alt="">
+                                          Wykopy</a>
                               </li>
-                              <li><a href="referencje.html"><img src="images/gem-solid.svg" alt=""> Referencje</a>
+                              <li><a href="Wywóz gruzu i wynajem.html"><img src="../images/arrow-circle-right-solid.svg" alt="">
+                                          Wywóz gruzu </a></li>
+                              <li><a href="Wywóz i utylizacja.html"><img src="../images/arrow-circle-right-solid.svg" alt="">
+                                          odpadów budowlanych</a></li>
+                        </ul>
+                  </li>
+                              <li><a href="../faq.html"><img src="../images/gem-solid.svg" alt=""> FAQ</a>
                               </li>
-                              <li><a href="gallary1.html"><img src="images/image-regular.svg" alt=""> Galeria</a>
+                              <li><a href="../gallary/gallary1.html"><img src="../images/image-regular.svg" alt="">
+                                          Galeria</a>
                               </li>
-                              <li><a href="#contact"><img src="images/headset-solid.svg" alt=""> Kontakt</a>
+                              <li><a href="#contact"><img src="../images/headset-solid.svg" alt=""> Kontakt</a>
                               </li>
                         </ul>
                   </amp-sidebar>
                   <div class="logowrapper"><img class="logoimg" src="../images/mainlogo.png" alt="">
-                        <p style="margin-top: -.3rem; color: #000;">POLDIM</p>
+                        <p style="margin-top: -.3rem;color: #000;">POLDIM</p>
                   </div>
             </div>
             <!--__________________________Desktop Navbar area_____________________________-->
             <nav id="dnone" class="art-nav" style="display: flex;">
                   <div class="logoWrapper">
-                        <img src="images/mainlogo.png" style="width: 4rem;" alt=""> <span
+                        <img src="../images/mainlogo.png" style="width: 4rem;" alt=""> <span
                               style="color: #000;">POLDIM</span>
                   </div>
                   <div class="art-nav-inner">
                         <ul class="art-hmenu " style="display: flex;">
-                              <li><a href="index.html" class="active">Strona główna</a></li>
-                              <li><a href="onas.html">O nas</a></li>
-                              <li id="dropDownHover" style="position: relative;"><a href="Oferta/oferta.html">Oferta
-                                          <img src="../fontawesome/sort-down-solid.svg" alt=""></a>
-                                    <ul class="dropDown">
-                                          <li><a href="Oferta/Wyburzenia.html">Wyburzenia</a></li>
-                                          <li><a href="Oferta/Wykopy.html">Wykopy</a></li>
-                                          <li><a href="Oferta/Wywóz gruzu i wynajem.html">Wywóz gruzu i
-                                                      kontenery na
-                                                      gruz</a></li>
-                                          <li><a href="Oferta/Wywóz i utylizacja.html">Wywóz i
-                                                      utylizacja
-                                                      odpadów budowlanych</a></li>
-                                    </ul>
-                              </li>
-                              <li><a href="">Referencje</a></li>
-                              <li><a href="gallary1.html">Galeria</a></li>
+                              <li><a href="../index.html" class="active">Strona główna</a></li>
+                              <li><a href="../onas.html">O nas</a></li>
+                              <li id="dropDownHover" style="position: relative;"><a href="oferta.html">Oferta
+                                    <img src="../fontawesome/sort-down-solid.svg" alt=""></a>
+                              <ul class="dropDown">
+                                    <li><a href="Wyburzenia.html">Wyburzenia</a></li>
+                                    <li><a href="Wykopy.html">Wykopy</a></li>
+                                    <li><a href="Wywóz gruzu i wynajem.html">Wywóz gruzu i
+                                                kontenery na
+                                                gruz</a></li>
+                                    <li><a href="Wywóz i utylizacja.html">Wywóz i
+                                                utylizacja
+                                                odpadów budowlanych</a></li>
+                              </ul>
+                        </li>
+                              <li><a href="../faq.html">FAQ</a></li>
+                              <li><a href="../gallary/gallary1.html">Galeria</a></li>
                               <li><a href="#contact">Kontakt</a></li>
                         </ul>
                   </div>
@@ -1383,69 +738,80 @@
             <div class="sliderWrapper">
                   <amp-carousel class="sliderheight" width="400" height="268" layout="responsive" type="slides" autoplay
                         delay="5000" role="region" aria-label="Carousel with autoplay">
-                        <amp-img src="images/slider/slider.jpg" width="400" height="550" layout="responsive"
+                        <amp-img src="../images/slider/slider.jpg" width="400" height="550" layout="responsive"
                               alt="a sample image">
                         </amp-img>
-                        <amp-img src="images/slider/slider1.jpg" width="400" height="550" layout="responsive"
+                        <amp-img src="../images/slider/slider1.jpg" width="400" height="550" layout="responsive"
                               alt="another sample image"></amp-img>
-                        <amp-img src="images/slider/slider2.jpg" width="400" height="550" layout="responsive"
+                        <amp-img src="../images/slider/slider2.jpg" width="400" height="550" layout="responsive"
                               alt="and another sample image"></amp-img>
                   </amp-carousel>
             </div>
             <div class="sliderContent" id="sliderContent">
-                  <h1 style="text-align: center; font-size: 3rem;">O nas</h1>
+                  <h1 style="text-align: center;">Wyburzenia</h1>
                   <h3 style="text-align: center;">POLDIM - TEL. 880 708 520</h3>
-                  <div class="sliderBtn" style="margin: auto;"><a href="">Content Us</a></div>
+                  <p></p>
+                  <div class="sliderBtn" style="margin: auto;"><a href="#contact">Content Us</a></div>
             </div>
       </section>
-
-      <!--__________________________onas post_____________________________-->
-      <section id="onas">
-            <div class="container">
-                  <h1>Jesteśmy firmą wydobywczą Poldim </h1>
-                  <div class="row" style="padding-top: 6rem;">
-                        <div class="col-12 col-md-4">
-                              <div class="onasImgWrapper"><img style="width: 100%;" src="images/mainlogo.png" alt="">
-                                    <p style="text-align: center;font-size: 2rem;">Poldim</p>
-                              </div>
-                        </div>
-                        <div class="col-12 col-md-4">
-                              <div class="onasContentWrapper">
-                                    <h3>Historia firmy </h3>
-                                    <p>Działamy w branży wykopaliskowej od ponad 20 lat. Działając pod różnymi nazwami,
-                                          postanowiliśmy wykorzystać Poldim Excavation jako naszą główną nazwę
-                                          marketingową i markę. Jesteśmy lokalnymi ekspertami od wykopalisk w Poldim!
-                                    </p>
-                              </div>
-                              <div class="onasContentWrapper">
-                                    <h3>WIZJA FIRMY</h3>
-                                    <p>Nasza wizja jest prosta. Być najwyższej jakości firmą wykopaliskową, którą
-                                          mogą wynająć klienci komercyjni lub mieszkaniowi. Wierzymy, że jakość pracy
-                                          bez chodzenia na skróty sprawia, że jesteśmy gorliwymi wykonawcami wykopów w
-                                          Poldim. </p>
-                              </div>
-
-
-                        </div>
-                        <div class="col-12 col-md-4">
-                              <div class="onasContentWrapper">
-                                    <h3>NASZA MISJA</h3>
-                                    <p>Aby zapewnić doskonałość w wykonywanej przez nas pracy. Celem jest opuszczenie
-                                          każdego miejsca pracy z zadowolonym klientem i projektem wykonanym zgodnie ze
-                                          specyfikacją. Nie jesteśmy szczęśliwi, chyba że jesteś szczęśliwy.</p>
-                              </div>
-
-                              <div class="onasContentWrapper">
-                                    <h3>WYBIERZ NAS</h3>
-                                    <p>Wybór jest jasny i obiecujemy, że zawsze dostaniesz to, za co płacisz jakością i
-                                          ciężką pracą.
-
-                                          Poproś o bezpłatną ofertę tutaj lub zadzwoń POLDIM - TEL. 880 708 520 </p>
+      <!--__________________________fast post_____________________________-->
+      <section id="ofertaPost">
+            <div class="container box-shaddow">
+                  <div class="row">
+           
+                        <div class="col-12">
+                              <div class="imgWrapper"><img style="display: block;margin: auto;width: 100%;max-height: 32rem;" src="ofertaImg/Wyburzenia.gif" alt=""></div>
+                              <div id="post2" class="ofertaContentwrapper">
+                                    <h2>Wyburzenia</h2>
+                                    <p>Zdarza się, że niektóre obiekty na posesji nie nadają się już do użytku.
+                                          W
+                                          miejsce starych, zniszczonych lub uszkodzonych przez wichury budynków
+                                          mają
+                                          zostać zbudowane nowe konstrukcje. Aby móc zainicjować budowę, trzeba
+                                          najpierw
+                                          pozbyć się dotychczasowej budowli, która wręcz może zagrażać
+                                          bezpieczeństwu
+                                          ludzi znajdujących się w okolicy.
+                                          <br><br>Tutaj wkracza do akcji nasza firma - zajmujemy się kompleksowym
+                                          wyburzaniem obiektów. Dysponujemy sprzętem, który poradzi sobie z każdym
+                                          zadaniem. Wyburzyliśmy już setki budynków. Bezproblemowe wyburzanie, z
+                                          pełnym
+                                          zabezpieczeniem i profesjonalizmem - to właśnie nasza oferta. Zajmiemy
+                                          się nie
+                                          tylko wyburzeniem, ale także zaoferujemy wywóz gruzu, który powstanie po
+                                          usunięciu budynku. W naszej firmie każdy może wynająć kontenery na gruz
+                                          i odpady
+                                          budowlane. Podczas wyburzania zajmiemy się usuwaniem gruzu, który
+                                          zostanie
+                                          załadowany i zabezpieczony na specjalnych kontenerach.
+                                          <br><br>Przeprowadziliśmy wiele wyburzeń - każde zakończyło się
+                                          sukcesem. Do
+                                          każdego obiektu, który wymaga rozbiórki podchodzimy indywidualnie,
+                                          analizując
+                                          wszystkie przeszkody i prewencyjnie podejmując działania które zwiększą
+                                          bezpieczeństwo całego procesu wyburzania. Nie działamy pochopnie, nie
+                                          narażamy
+                                          naszych Klientów na straty - wyburzenia przeprowadzane przez naszą firmę
+                                          muszą
+                                          być perfekcyjne i bezpieczne. Tego przestrzegamy od początku istnienia
+                                          działalności i taką dewizą się kierujemy.
+                                          <br><br>Jeżeli mają Państwo potrzebę wyburzenia budynku, obiektu
+                                          firmowego lub
+                                          każdej innej budowli, która została przeznaczona do rozbiórki, a przy
+                                          okazji
+                                          szukają Państwo firmy, która zajmie się nie tylko wyburzeniem, ale także
+                                          uprzątnięciem gruzu powstałego po rozbiórce - zapraszamy do skorzystania
+                                          z usług
+                                          naszej firmy. Doskonale odnajdziemy się w tym zadaniu, oferując pomoc i
+                                          wykorzystując nasz profesjonalizm oraz flotę sprzętów, jaką posiadamy.
+                                          Wystarczy
+                                          skontaktować się z nami i ustalić szczegóły.<br></p>
                               </div>
                         </div>
                   </div>
             </div>
       </section>
+
       <!--__________________________Footer area_____________________________-->
 
       <footer id="contact" class="art-footer">
@@ -1455,7 +821,7 @@
                         <div class="row">
                               <div class="col-12 col-md-6">
                                     <div class="contactWrapper">
-                                          <div class="imgDiv"><img src="images/map-marker-alt-solid.svg" alt="">
+                                          <div class="imgDiv"><img src="../images/map-marker-alt-solid.svg" alt="">
                                           </div>
                                           <h3>Address</h3>
                                           <ul>
@@ -1477,10 +843,12 @@
                               <div class="col-12 col-md-6">
                                     <div class="mapWrapper">
 
-                                          <div class="gmap_canvas"><iframe id="gmap_canvas"
-                                                      src="https://maps.google.com/maps?q=aleja%20Ro%C5%BAdzie%C5%84skiego%2097,%2040-203%20Katowice,%20Poland&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                                                      frameborder="0" scrolling="no" marginheight="0"
-                                                      marginwidth="0"></iframe>
+                                          <div class="gmap_canvas">
+                                                <amp-iframe width="200" height="200"
+                                                      sandbox="allow-scripts allow-same-origin" layout="responsive"
+                                                      frameborder="0"
+                                                      src="https://maps.google.com/maps?q=aleja%20Ro%C5%BAdzie%C5%84skiego%2097,%2040-203%20Katowice,%20Poland&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                                                </amp-iframe>
 
                                           </div>
                                     </div>
@@ -1500,9 +868,9 @@
                                     target="_blank">pozycjonowanie</a> & <a href="http://www.interprom.pl"
                                     title="linki sponsorowane" target="_blank">linki sponsorowane</a>
                               Interprom.pl.
-                              <p><a href="polityka-cookies.html">Polityka cookies</a> | <a
-                                          href="polityka-prywatnosci.html">Polityka prywatności</a> | <a
-                                          href="sitemap.xml">Mapa
+                              <p><a href="./polityka-cookies.html">Polityka cookies</a> | <a
+                                          href="./polityka-prywatnosci.html">Polityka prywatności</a> | <a
+                                          href="./sitemap.xml">Mapa
                                           strony</a></p>
                         </p>
                         <div class="company">
